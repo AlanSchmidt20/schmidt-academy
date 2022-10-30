@@ -5,6 +5,10 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import  "./NavBar.css"
 
+import {NavBarTitles} from "./constant"
+
+import {Link} from "react-router-dom" 
+
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -48,18 +52,24 @@ const NavBar = () => {
 
   return (
     <Box className="navbar" sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <img src="../../public/images/logo.png" className="navbar--logo"/>
+     
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" className="navbar--tabs">
-          <Tab label="HOME" className="tab--item" {...a11yProps(0)} />
-          <Tab label="ABOUT US" {...a11yProps(1)} />
-          <Tab label="SERVICES" {...a11yProps(3)} />
-          <Tab label="PROGRAM" {...a11yProps(3)} />
-          <Tab label="STAFF" {...a11yProps(4)} />
-          <Tab label="TESTIMONIALS" {...a11yProps(5)} />
-          <Tab label="CONTACT" {...a11yProps(6)} />
+        
+
+        {NavBarTitles.map( (routingNames, index) => 
+            <Tab label={routingNames.title} to={routingNames.path} component={Link} className="tab--item" {...a11yProps(index)} />
+          )}
+  
+  {/* <Tabs>
+      {[1, 2].map((title) => (
+        <Tab label={title} value="/inbox/:id" to="/inbox/1" component={Link} />
+      ))}
+      )
+    </Tabs> */}
+         
+
         </Tabs>
-      </Box>
+
       <TabPanel value={value} index={0}>
        
       </TabPanel>

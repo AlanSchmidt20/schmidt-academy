@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.home--element {
+ background-color: #61dafb;
+ color: #282c34;
+}
+
+.about--element {
+  color: black;
+}
