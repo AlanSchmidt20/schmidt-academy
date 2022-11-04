@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import './App.css';
 import Header  from './components';
+import Home from "./screens";
+import AboutUs from './screens/Body/AboutUs';
 
 
 function App() {
@@ -11,8 +13,8 @@ function App() {
     <Header /> 
       <Routes>
 
-          <Route path="/" element={<div className="home--element">HOME</div>} />
-          <Route path='about' element={<div className="about--element">about</div>}  />
+          <Route path="/" element={<Home/>} />
+          <Route path='about' element={<AboutUs />}  />
 
 
       </Routes>

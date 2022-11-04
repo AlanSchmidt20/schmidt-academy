@@ -70,15 +70,7 @@ const NavBar = () => {
 
         </Tabs>
 
-      <TabPanel value={value} index={0}>
-       
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-       
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        
-      </TabPanel>
+
     </Box>
   );
 }
