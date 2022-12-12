@@ -37,6 +37,181 @@
   }
 }
 
+.info--container {
+  display: flex;
+  /*   justify-content: center; */
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
 
+.stats--component {
+  margin-top: 20px;
+}
 
+.serviceCard--container {
+  background: black;
+  color: #fff;
+  padding-top: 5px;
+}
+.service--container {
+  /*   width: max-content; */
+  margin-top: 20px;
+  background: black !important;
+  /*   text-align: center !important; */
+}
 
+.service--card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /*   justify-content: center;
+  align-content: center;
+  width: 70%;
+  margin: 0 10px; */
+  /*   color: white !important; */
+  background: none !important;
+  border: none !important;
+  height: 290px;
+}
+.card--container {
+  background-color: black !important;
+  color: white !important;
+  border: none !important;
+}
+.card--container:hover {
+  background-color: #007bff !important;
+  cursor: pointer !important;
+  transition: 0.7s;
+}
+
+.member--component {
+  margin: 0 20px;
+  box-shadow: 0 2px 2px !important;
+}
+
+.member--component:hover {
+  box-shadow: 0 4px 6px !important;
+  cursor: pointer;
+}
+
+.backgroundImage--component {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/PromoFoto.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 50px;
+  font-family: sans-serif;
+  font-size: 38px;
+  margin-top: 20px;
+}
+
+.backgroundContact--btn {
+  background-color: #2196f3;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: 0.5s;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0 10px;
+  align-items: center;
+  display: inline-flex;
+  color: #fff;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.program--item {
+  margin: 20px 0 !important;
+  background: #2196f3;
+  margin-top: 0 !important;
+  padding: 20px 0;
+  color: #fff;
+}
+.program--icon {
+  display: block !important;
+  margin-left: 20px !important;
+  margin-bottom: 10px !important;
+  color: green !important;
+  padding: 12px 0 !important;
+}
+.program--component {
+  /* display: flex; */
+  margin: 0 20px;
+}
+
+.program--button {
+  background: #2196f3 !important;
+  display: flex !important;
+  justify-content: center;
+  margin: auto !important;
+  font-weight: bold !important;
+}
+
+.icons--container {
+  padding: 0 !important;
+}
+
+.list--container {
+  align-self: center !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.MuiListItemText-secondary,
+.MuiListItemText-primary {
+  font-size: 1rem !important;
+  color: black !important;
+  padding: 0 !important;
+  margin-top: 9px !important;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 10px;
+  padding: 10px 0 !important;
+}
+.listItem--container {
+  margin-left: -2px !important;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-top: 0 !important;
+}
+@media screen and (max-width: 480px) {
+  .serviceCard--container {
+    height: unset !important;
+  }
+
+  .service--card {
+    display: block;
+    align-self: center;
+    height: unset;
+    margin-left: 40px;
+    padding-bottom: 20px;
+  }
+
+  .memberCard--component {
+    display: block !important;
+    margin-left: 25px;
+  }
+  .member--component {
+    margin-bottom: 20px;
+  }
+  .backgroundContact--btn {
+    padding: 0 10px;
+  }
+  .programCard--container {
+    text-align: center;
+  }
+  .programCard--component {
+    display: inline-block !important;
+    align-items: center !important;
+    margin-bottom: 20px;
+  }
+  .program--component {
+    margin-bottom: 20px;
+    height: 340px /* !important */;
+    display: flex;
+  }
+}
