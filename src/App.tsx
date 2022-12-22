@@ -9,6 +9,7 @@ import Services from './screens/Body/Services'
 import Staff from './screens/Body/Staff'
 import Programs from './screens/Body/Programs'
 import Testimonials from './screens/Body/Testimonials'
+import Contact from './screens/Body/Contact'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="team" element={<Staff />} />
         <Route path="programs" element={<Programs />} />
         <Route path="testimonials" element={<Testimonials />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   )

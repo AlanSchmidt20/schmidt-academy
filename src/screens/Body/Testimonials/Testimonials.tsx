@@ -8,19 +8,20 @@ import Typography from '@mui/material/Typography'
 import { testimonials } from '../../../content/testimonials'
 
 const testimonialCard = testimonials.map(testimonial => (
-  <Card className="member--component" sx={{ maxWidth: 300, margin: '0 10', textAlign: 'center' }}>
-    <CardMedia component="img" height="370" /* src={`${}`}  */ />
-    <CardContent>
-      <Typography variant="body2" color="text.secondary">
+  <Card className="testimonials--component" sx={{ maxWidth: 300, textAlign: 'center' }}>
+    <CardMedia className="testimonials--image" component="img" src={`${testimonial.img}`} />
+    <CardContent className="testimonials--content">
+      <Typography variant="body2" color="text.secondary" sx={{ marginTop: '40px' }}>
         {testimonial.description}
-      </Typography>
-      <Typography gutterBottom variant="h5" component="div" sx={{ marginBottom: 0 }}>
-        {testimonial.name}
       </Typography>
       <Typography
         gutterBottom
-        variant="h6"
-        sx={{ fontSize: 'small', marginTop: 0, fontWeight: 'bold' }}>
+        variant="h5"
+        component="div"
+        sx={{ marginBottom: 0, color: '#007bff' }}>
+        {testimonial.name}
+      </Typography>
+      <Typography gutterBottom variant="h6" sx={{ fontSize: 'small', fontWeight: 'bold' }}>
         {testimonial.title}
       </Typography>
     </CardContent>
@@ -29,12 +30,12 @@ const testimonialCard = testimonials.map(testimonial => (
 
 export default function StaffCard() {
   return (
-    <Box className="memberCard--container">
+    <Box className="testimonialsCard--container">
       <h1 style={{ textAlign: 'center' }}>TESTIMONIALS</h1>
       <Card
-        className="memberCard--component"
+        className="testimonialsCard--component"
         variant="outlined"
-        sx={{ display: 'flex', justifyContent: 'center', border: 0 }}>
+        sx={{ display: 'flex', justifyContent: 'center', border: 0, height: 240 }}>
         {testimonialCard}
       </Card>
     </Box>

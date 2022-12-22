@@ -178,6 +178,48 @@
   margin-bottom: 20px;
   padding-top: 0 !important;
 }
+
+.testimonialsCard--container {
+  margin-top: 40px;
+}
+
+.testimonials--component {
+  margin: 0 20px;
+  box-shadow: none !important;
+  justify-content: center;
+  height: 260px !important;
+  position: relative;
+}
+
+.testimonials--component:hover {
+  box-shadow: 0 4px 6px !important;
+  cursor: pointer;
+}
+.testimonials--image {
+  height: 120px;
+  border-radius: 50%;
+  width: 120px !important;
+  /* display: inline !important; */
+  position: absolute;
+  left: calc(50% - 70px);
+  top: -10px;
+  border: 10px solid #fff;
+}
+
+.testimonials--content {
+  margin-top: 70px;
+  background: #efefef;
+  height: 170px;
+}
+
+.contact--component {
+  justify-content: center;
+}
+
+/* CONTACT -- Comments field */
+/* .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 58.5ch !important;
+} */
 @media screen and (max-width: 480px) {
   .serviceCard--container {
     height: unset !important;
@@ -213,5 +255,13 @@
     margin-bottom: 20px;
     height: 340px /* !important */;
     display: flex;
+  }
+  .testimonialsCard--component {
+    display: block !important;
+    margin-left: 20px;
+    height: unset !important;
+  }
+  .testimonials--component {
+    margin-bottom: 30px;
   }
 }

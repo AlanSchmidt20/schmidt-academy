@@ -5,6 +5,7 @@ import Staff from './Staff'
 import BackgroundContact from './BackgroundContact'
 import Programs from './Programs'
 import Testimonials from './Testimonials'
+import Contact from './Contact'
 
 const Body = () => (
   <div className="body--container">
@@ -15,6 +16,7 @@ const Body = () => (
     <BackgroundContact />
     <Programs />
     <Testimonials />  
+    <Contact />
   </div>
 )
 
