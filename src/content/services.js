@@ -24,7 +24,7 @@ export const services = [
   },
   {
     icon: <HomeIcon fontSize="large" sx={{ mt: 2 }} />,
-    service: 'Accommation',
+    service: 'Accommodation',
     description:
       'Viviras en la mansion Schmidt con multiples facilidades como baño al intemperie, loft, entre otros.',
   },

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import TextField from '@mui/material/TextField'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import Paper from '@mui/material/Paper'
 import { styled } from '@mui/material/styles'
+import { contactUs } from '../../../content/contactUs'
+import emailjs from '@emailjs/browser'
+import AlertDialog from './Modal/Modal'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -14,15 +17,24 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.primary,
 }))
 
-export default function Form() {
+const contactInformation = contactUs.map(contact => (
+  <Stack>
+    <Item sx={{ display: 'flex' }}>
+      <b>{contact.title} </b> {contact.icon}
+      {contact.description}
+      {contact.iconOne} {contact.inconTwo} {contact.iconThree}
+    </Item>
+  </Stack>
+))
+
+export default function ContactUs() {
   const [formData, setFormData] = React.useState({
     firstName: '',
     lastName: '',
     phoneNumber: '',
     email: '',
-    comments: '',
+    message: '',
   })
-
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
     const { name, value, type, checked } = event.target
     setFormData(prevFormData => {
@@ -33,24 +45,54 @@ export default function Form() {
     })
   }
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    // submitToApi(formData)
-    console.log(formData)
+  const form = useRef<HTMLFormElement>(null!)
+
+  const sendEmail = (e: { target: any; preventDefault: () => void }) => {
+    e.preventDefault()
+
+    emailjs.sendForm('service_qnyh18p', 'template_znafdfh', form.current, 'GSr3XNhto1i_9ltj7').then(
+      result => {
+        console.log(result.text)
+        setFormData({
+          firstName: '',
+          lastName: '',
+          phoneNumber: '',
+          email: '',
+          message: '',
+        })
+      },
+      error => {
+        console.log(error.text)
+      }
+    )
   }
 
+  const [modalOpen, setModalOpen] = useState(false)
+
+  const handleClickOpen = () => {
+    setModalOpen(true)
+  }
+
+  const handleClose = () => {
+    setModalOpen(false)
+  }
+  var open = 'something' //temporary solution for keyword error
+
   return (
-    <>
-      <h1 style={{ textAlign: 'center' }}>CONTACT US</h1>
+    <div className="contact--container">
+      <h1 style={{ textAlign: 'center', marginBottom: '40px' }}>CONTACT US</h1>
       <Box
         className="contact--component"
-        // component="form"
-        sx={{ display: 'flex', '& .MuiTextField-root': { m: 1, width: '25ch' } }}
-        /*    noValidate
-      autoComplete="off" */
-      >
-        <form onSubmit={handleSubmit} style={{ width: '40%' }}>
+        sx={{
+          display: 'flex',
+          '& .MuiTextField-root': { m: 1, width: '25ch' },
+        }}>
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          /* onSubmit={handleSubmit} */ className="contact--form">
           <TextField
+            className="textField--input"
             type="text"
             onChange={handleChange}
             name="firstName"
@@ -60,6 +102,7 @@ export default function Form() {
             variant="outlined"
           />
           <TextField
+            className="textField--input"
             type="text"
             onChange={handleChange}
             name="lastName"
@@ -69,6 +112,7 @@ export default function Form() {
             variant="outlined"
           />
           <TextField
+            className="textField--input"
             type="text"
             onChange={handleChange}
             name="phoneNumber"
@@ -78,6 +122,7 @@ export default function Form() {
             variant="outlined"
           />
           <TextField
+            className="textField--input"
             type="text"
             onChange={handleChange}
             name="email"
@@ -87,27 +132,38 @@ export default function Form() {
             variant="outlined"
           />
           <TextField
+            className="textField--input"
             type="text"
             onChange={handleChange}
-            name="comments"
+            name="message"
             multiline
             maxRows={4}
-            value={formData.comments}
+            value={formData.message}
             id="outlined-basic"
-            label="Comments"
+            label="Message"
             variant="outlined"
           />
-          <Button type="submit" variant="outlined" sx={{ m: 1, display: 'block' }}>
+          <Button
+            className="submit--button"
+            type="submit"
+            variant="outlined"
+            size="large"
+            onClick={handleClickOpen}
+            disabled={
+              formData.firstName.length < 1 ||
+              formData.lastName.length < 1 ||
+              formData.phoneNumber.length < 1 ||
+              formData.email.length < 1
+            }
+            sx={{ m: 1, display: 'block', mb: 2 }}>
             Submit
           </Button>
         </form>
-        <Stack spacing={2} sx={{ marginTop: '10px', width: '40%' }}>
-          <Item>Hello</Item>
-          <Item>Hello</Item>
-          <Item>Hello</Item>
-          <Item>Hello</Item>
+        <Stack spacing={2.3} className="contact--information">
+          {contactInformation}
         </Stack>
       </Box>
-    </>
+      {modalOpen && <AlertDialog open={open} onClose={handleClose} />}
+    </div>
   )
 }

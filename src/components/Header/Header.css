@@ -1,11 +1,11 @@
 .header--container {
-    display: flex;
-    height: 40px;
-    align-items: center;
-    margin: 20px;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  margin: 20px;
+  justify-content: center;
 }
 
 .header--icon {
-    height: 60px !important;
-    
+  height: 60px !important;
 }

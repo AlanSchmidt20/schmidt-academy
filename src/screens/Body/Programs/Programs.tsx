@@ -62,7 +62,7 @@ const programCard = programs.map(program => (
         <ListItemText className="item--text" primary={program.item1} secondary={program.item2} />
       </ListItem>
       <Button className="program--button" variant="contained">
-        Sumate
+        More Info
       </Button>
     </List>
   </Card>

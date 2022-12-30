@@ -1,4 +1,4 @@
-import * as React from 'react'
+/* import * as React from 'react'
 import { useTheme } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 import MobileStepper from '@mui/material/MobileStepper'
@@ -65,3 +65,47 @@ function SwipeableTextMobileStepper() {
 }
 
 export default SwipeableTextMobileStepper
+ */
+import React from 'react'
+import Carousel from 'react-material-ui-carousel'
+import { Image } from 'mui-image'
+import './Home.css'
+
+export const images = [
+  {
+    imgPath: require('../../../images/home--image1.jpeg'),
+  },
+  {
+    imgPath: require('../../../images/home--image2.jpeg'),
+  },
+  {
+    imgPath: require('../../../images/home--image3.png'),
+  },
+]
+
+function home(props: any) {
+  return (
+    <Carousel height="800px">
+      {images.map(image => (
+        <Image className="carousel--image" src={image.imgPath} />
+      ))}
+    </Carousel>
+  )
+}
+
+/* function Item(props: any) {
+  return (
+    
+    <Carousel>
+
+    <Box>
+      {images.map(image => (
+        <Image  src={image.imgPath} />
+      ))}
+    </Box>
+
+    </Carousel>
+  )
+} */
+
+export default home

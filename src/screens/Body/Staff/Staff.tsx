@@ -23,6 +23,9 @@ const memberCard = team.map(member => (
       <Typography variant="body2" color="text.secondary">
         {member.description}
       </Typography>
+      {/*       <Typography variant="body2" color="text.secondary">
+        {member.icon}
+      </Typography> */}
     </CardContent>
   </Card>
 ))
