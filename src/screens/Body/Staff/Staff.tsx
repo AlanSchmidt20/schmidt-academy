@@ -6,6 +6,30 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { team } from '../../../content/team'
+import { teamCeo } from '../../../content/team'
+
+const ceoCard = teamCeo.map(ceo => (
+  <Card className="member--component" sx={{ maxWidth: 300, margin: '0 10', textAlign: 'center' }}>
+    <CardMedia component="img" height="370" src={`${ceo.img}`} />
+    <CardContent>
+      <Typography gutterBottom variant="h5" component="div" sx={{ marginBottom: 0 }}>
+        {ceo.name}
+      </Typography>
+      <Typography
+        gutterBottom
+        variant="h6"
+        sx={{ fontSize: 'small', marginTop: 0, fontWeight: 'bold' }}>
+        {ceo.title}
+      </Typography>
+      <Typography variant="body2" color="text.secondary">
+        {ceo.description}
+      </Typography>
+      {/*       <Typography variant="body2" color="text.secondary">
+      {member.icon}
+    </Typography> */}
+    </CardContent>
+  </Card>
+))
 
 const memberCard = team.map(member => (
   <Card className="member--component" sx={{ maxWidth: 300, margin: '0 10', textAlign: 'center' }}>
@@ -34,6 +58,12 @@ export default function StaffCard() {
   return (
     <Box className="memberCard--container">
       <h1 style={{ textAlign: 'center' }}>Meet the Team</h1>
+      <Card
+        className="memberCard--component"
+        variant="outlined"
+        sx={{ display: 'flex', justifyContent: 'center', border: 0, mb: 3 }}>
+        {ceoCard}
+      </Card>
       <Card
         className="memberCard--component"
         variant="outlined"

@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+.screens--wraper {
+  padding-top: 50px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -62,7 +66,7 @@ nav {
   margin-top: 20px;
 }
 
-.stats--component {
+.aboutUs--image {
   margin-top: 20px;
 }
 
@@ -114,7 +118,7 @@ nav {
 
 .backgroundImage--component {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./images/PromoFoto.jpeg);
+    url('./images//PromoFoto.jpeg');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -168,6 +172,20 @@ nav {
   justify-content: center;
   margin: auto !important;
   font-weight: bold !important;
+}
+
+.programCard--subTitle {
+  font-weight: bold !important;
+  color: #ed6c02;
+}
+
+.programCard--subDescription {
+  margin-bottom: 15px !important;
+}
+
+.programCard--button {
+  width: 45%;
+  margin-right: 20px !important;
 }
 
 .icons--container {
@@ -238,6 +256,11 @@ nav {
 .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
   width: 58.5ch !important;
 }
+
+.submit--button {
+  width: inherit !important;
+  height: 55px !important;
+}
 .css-1hof3tc {
   width: 58.5ch !important;
 }
@@ -260,9 +283,12 @@ nav {
     visibility: visible;
     opacity: 1;
   }
-
+  .css-ttwr4n,
+  .css-1aquho2-MuiTabs-indicator {
+    background-color: orange !important;
+  }
   nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -271,13 +297,19 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 0.5rem;
     transition: 1s;
     transform: translateY(-100vh);
     z-index: 999;
-    background: white;
+    background: #f7f7f7;
+    background-image: url(./images/cellPhone\ Nav--logo.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
-
+  .navbar--tabs {
+    margin-right: 0 !important;
+  }
   .css-8atqhb {
     display: flex !important;
     flex-direction: row;
@@ -301,6 +333,20 @@ nav {
   .nav-close-btn {
     top: 2rem;
     right: 2rem;
+  }
+
+  .info--container {
+    display: block;
+    margin: 0 20px;
+  }
+
+  .aboutUs--image {
+    width: inherit !important;
+  }
+  .aboutUs--text {
+    margin-left: 0 !important;
+    width: 100% !important;
+    margin-top: 10px !important;
   }
 
   .serviceCard--container {
@@ -338,6 +384,54 @@ nav {
     height: 340px /* !important */;
     display: flex;
   }
+
+  .programsCard--wrapper {
+    display: block !important;
+    width: 90% !important;
+    margin: 0 18px !important;
+    height: unset !important;
+  }
+
+  .programsCard--content {
+    margin: 0 !important;
+    width: auto !important;
+  }
+
+  .programCard--actionArea {
+    padding: 0 !important;
+    display: block !important;
+    text-align: center !important;
+  }
+
+  .programCard--button {
+    width: unset !important;
+    margin: 5px 0 !important;
+  }
+
+  .ourPrograms--component {
+    height: unset !important;
+    width: 90% !important;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+      0px 1px 3px 0px rgb(0 0 0 / 12%) !important;
+    margin-left: 15px !important;
+    border-radius: 4px !important;
+  }
+
+  .ourPrograms--content {
+    display: block !important;
+    height: unset !important;
+  }
+
+  .ourPrograms--image,
+  .ourPrograms--text {
+    width: 100% !important;
+  }
+
+  .ourPrograms--action {
+    display: flex;
+    justify-content: center !important;
+  }
+
   .testimonialsCard--component {
     display: block !important;
     margin-left: 20px;
@@ -374,7 +468,6 @@ nav {
 
   .submit--button {
     width: 100% !important;
-    height: 50px !important;
   }
 
   .css-1dydd9z-MuiPaper-root {

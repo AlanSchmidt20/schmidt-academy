@@ -7,7 +7,7 @@ import Programs from './Programs'
 import Testimonials from './Testimonials'
 import Contact from './Contact'
 
-const Body = () => (
+const Screens = () => (
   <div className="body--container">
     <Home />
     <AboutUs />
@@ -20,4 +20,4 @@ const Body = () => (
   </div>
 )
 
-export default Body
+export default Screens

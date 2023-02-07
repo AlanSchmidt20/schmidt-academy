@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import './NavBar.css'
 import MenuIcon from '@mui/icons-material/Menu'
-import CloseIcon from '@mui/icons-material/Close'
 
 import { NavBarTitles } from './constant'
 
@@ -66,6 +65,7 @@ const NavBar = () => {
           {NavBarTitles.map((routingNames, index) => (
             <Tab
               label={routingNames.title}
+              onClick={showNavBar}
               to={routingNames.path}
               component={Link}
               className="tab--item"
@@ -80,7 +80,7 @@ const NavBar = () => {
       )
     </Tabs> */}
         </Tabs>
-        <CloseIcon className="nav-btn nav-close-btn" fontSize="medium" onClick={showNavBar} />
+        {/* <CloseIcon className="nav-btn nav-close-btn" fontSize="medium" onClick={showNavBar} /> */}
       </nav>
       <MenuIcon className="nav-btn" fontSize="large" onClick={showNavBar} />
     </Box>

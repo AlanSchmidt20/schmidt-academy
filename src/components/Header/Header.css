@@ -1,9 +1,14 @@
 .header--container {
   display: flex;
-  height: 40px;
+  height: 70px;
   align-items: center;
-  margin: 20px;
+  /*   margin: 20px; */
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 10;
+  top: 0;
 }
 
 .header--icon {

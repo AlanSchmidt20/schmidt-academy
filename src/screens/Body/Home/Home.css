@@ -1,7 +1,24 @@
-.carousel--image { 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.carousel--image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 800px;
+}
+.css-1l7c0cy {
+  top: 30px;
 }
 
+.css-1f8sh1y {
+  height: 860px !important;
+}
+@media screen and (max-width: 480px) {
+  .css-1f8sh1y {
+    height: 240px !important;
+  }
+  .carousel--component {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: fill;
+  }
+}
