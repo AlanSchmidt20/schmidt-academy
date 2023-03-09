@@ -5,26 +5,26 @@ export const NavBarTitles = [
   },
   {
     title: 'ABOUT US',
-    path: 'about',
+    path: '/about',
   },
   {
     title: 'SERVICES',
-    path: 'services',
+    path: '/services',
   },
   {
     title: 'TEAM',
-    path: 'team',
+    path: '/team',
   },
   {
     title: 'PROGRAMS',
-    path: 'programs',
+    path: '/programs',
   },
   {
     title: 'TESTIMONIALS',
-    path: 'testimonials',
+    path: '/testimonials',
   },
   {
     title: 'CONTACT',
-    path: 'contact',
+    path: '/contact',
   },
-]
+];
