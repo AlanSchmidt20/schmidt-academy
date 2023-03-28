@@ -17,11 +17,7 @@ export const contactUs = [
   }, */
   {
     title: 'Phone:',
-    icon: (
-      <a /*  href="" target="_blank" */>
-        <PhoneInTalkIcon fontSize="medium" sx={{ ml: 1, mr: 1, color: '#007bff' }} />
-      </a>
-    ),
+    icon: <PhoneInTalkIcon fontSize="medium" sx={{ ml: 1, mr: 1, color: '#007bff' }} />,
     description: `ARGENTINA + 54 9 115-428-7456 / 
     \r
     \nUSA + 1 786-834-7226 / COLOMBIA +57 316-482-0034`,
@@ -46,7 +42,7 @@ export const contactUs = [
       </a>
     ),
     iconTwo: (
-      <a /* href="" target="_blank" */>
+      <a href="https://wa.me/5491161913409" target="_blank" rel="noreferrer">
         <WhatsAppIcon fontSize="medium" sx={{ ml: 1, color: '#007bff' }} />
       </a>
     ),
