@@ -4,6 +4,8 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { testimonials } from '../../../content/testimonials'
+import Button from '@mui/material/Button'
+import { Link } from 'react-router-dom'
 
 const testimonialCard = testimonials.map((testimonial, idx) => (
   <Card
@@ -59,6 +61,16 @@ export default function StaffCard() {
         sx={{ display: 'flex', justifyContent: 'center', border: 0, height: 350 }}>
         {testimonialCard}
       </Card>
+      <Link className="defaultButton--btn" to={'/testimonials'}>
+        <Button
+          className="programCard--button testimonials-btn"
+          variant="contained"
+          sx={{ textDecoration: 'none !important' }}
+          size="large"
+          color="info">
+          MORE TESTIMONIALS
+        </Button>
+      </Link>
     </Box>
   )
 }

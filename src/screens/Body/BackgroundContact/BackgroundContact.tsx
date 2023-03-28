@@ -19,7 +19,7 @@ const BackgroundImage = ({
       <p style={{ fontFamily: 'Helvetica Neue LT' }}>
         Create your own program, adjust it at your convinience
       </p>
-      <Link className="backgroundContact--btn" to={'/contact'} onChange={handleClick}>
+      <Link className="defaultButton--btn" to={'/contact'} onChange={handleClick}>
         <Button
           className="programCard--button contact-btn"
           variant="contained"

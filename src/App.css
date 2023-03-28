@@ -132,12 +132,14 @@ nav {
   text-decoration: none !important;
 }
 
-.backgroundContact--btn {
+.defaultButton--btn {
   text-decoration: none;
+  width: 100vh;
+  text-align: center;
 }
 
 .contact-btn {
-  width: 13% !important;
+  width: 14% !important;
   text-decoration: none !important;
 }
 .program--item {
@@ -178,7 +180,6 @@ nav {
 
 .programCard--button {
   width: 45%;
-  margin-right: 20px !important;
 }
 
 .icons--container {
@@ -214,6 +215,10 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.testimonials-btn {
+  width: 27% !important;
+  margin: 3% 0 !important;
 }
 
 .testimonials--component {
@@ -257,18 +262,10 @@ nav {
   width: 90% !important;
 }
 
-/* CONTACT -- Comments field */
-/* .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
-  width: 58.5ch;
-} */
-
 .submit--button {
   width: 30ch !important;
   height: 55px !important;
 }
-/* .css-1hof3tc {
-  width: 58.5ch !important;
-} */
 
 .contact--container {
   background: #efefef;
