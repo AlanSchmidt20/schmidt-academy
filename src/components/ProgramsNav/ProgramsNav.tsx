@@ -10,43 +10,6 @@ import { CardActions } from '@mui/material'
 import { useRef, useState } from 'react'
 import FormDialog from './ProgamModal/ProgramModal'
 
-/* const programInfoCard = programsDescription.map(programDescription => (
-  <Card className="programsCard--wrapper" sx={{ boxShadow: 'none', display: 'flex', margin: 10 }}>
-    <CardMedia component="img" height="400px" src={`${programDescription.img}`} />
-    <CardContent className="programsCard--content" sx={{ width: '100%' }}>
-      <Typography gutterBottom variant="h4" component="div" fontWeight="bold">
-        {programDescription.title}
-      </Typography>
-      <Typography gutterBottom className="programCard--subDescription" variant="body2">
-        {programDescription.description}
-      </Typography>
-      <Typography className="programCard--subTitle" gutterBottom variant="body1">
-        {programDescription.ageTitle}
-      </Typography>
-      <Typography gutterBottom className="programCard--subDescription" variant="body2">
-        {programDescription.subDescription}
-      </Typography>
-      <Typography gutterBottom className="programCard--subTitle" variant="body1">
-        {programDescription.trainingTitle}
-      </Typography>
-      <ul
-        className="programCard--subDescription"
-        style={{ margin: 0, paddingInlineStart: 'inherit' }}>
-        <li>{programDescription.tennisTime}</li>
-        <li>{programDescription.physicalTime}</li>
-      </ul>
-      <CardActions className="programCard--actionArea">
-        <Button className="programCard--button" variant="contained" size="large" color="warning">
-          MORE INFO
-        </Button>
-        <Button className="programCard--button" variant="outlined" size="large" color="warning">
-          SCHEDULE A CAMP
-        </Button>
-      </CardActions>
-    </CardContent>
-  </Card>
-)) */
-
 export default function ProgramsInformation() {
   const asd = useRef<HTMLDivElement>(null!)
 
@@ -63,8 +26,8 @@ export default function ProgramsInformation() {
   return (
     <Box className="" sx={{ display: 'flex', justifyContent: 'center' }}>
       <Card className="" variant="outlined" sx={{ border: 'none' }}>
-        {programsDescription.map(programDescription => (
-          <div ref={asd}>
+        {programsDescription.map((programDescription, idx) => (
+          <div ref={asd} key={idx}>
             <Card
               className="programsCard--wrapper"
               sx={{
@@ -74,26 +37,55 @@ export default function ProgramsInformation() {
                 height: '450px',
                 width: '95%',
               }}>
-              <CardMedia component="img" /* height="400px" */ src={`${programDescription.img}`} />
+              <CardMedia
+                component="img"
+                /* height="400px" */ src={`${programDescription.img}`}
+              />
               <CardContent className="programsCard--content" sx={{ width: '100%' }}>
-                <Typography gutterBottom variant="h4" component="div" fontWeight="bold">
+                <Typography
+                  gutterBottom
+                  variant="h3"
+                  component="div"
+                  fontWeight="bold"
+                  fontFamily="Helvetica Neue LT">
                   {programDescription.title}
                 </Typography>
-                <Typography gutterBottom className="programCard--subDescription" variant="body2">
+                <Typography
+                  gutterBottom
+                  fontFamily="Helvetica Neue LT"
+                  className="programCard--subDescription"
+                  variant="body1">
                   {programDescription.description}
                 </Typography>
-                <Typography className="programCard--subTitle" gutterBottom variant="body1">
+                <Typography
+                  className="programCard--subTitle"
+                  gutterBottom
+                  fontFamily="Helvetica Neue LT"
+                  variant="body1">
                   {programDescription.ageTitle}
                 </Typography>
-                <Typography gutterBottom className="programCard--subDescription" variant="body2">
+                <Typography
+                  gutterBottom
+                  fontFamily="Helvetica Neue LT"
+                  className="programCard--subDescription"
+                  variant="body1">
                   {programDescription.subDescription}
                 </Typography>
-                <Typography gutterBottom className="programCard--subTitle" variant="body1">
+                <Typography
+                  gutterBottom
+                  fontFamily="Helvetica Neue LT"
+                  className="programCard--subTitle"
+                  variant="body1">
                   {programDescription.trainingTitle}
                 </Typography>
                 <ul
                   className="programCard--subDescription"
-                  style={{ margin: 0, paddingInlineStart: 'inherit' }}>
+                  style={{
+                    margin: 0,
+                    paddingInlineStart: 'inherit',
+                    fontFamily: 'Helvetica Neue LT',
+                    fontSize: 'medium',
+                  }}>
                   <li>{programDescription.tennisTime}</li>
                   <li>{programDescription.physicalTime}</li>
                 </ul>

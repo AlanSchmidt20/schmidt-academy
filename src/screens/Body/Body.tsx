@@ -6,18 +6,26 @@ import BackgroundContact from './BackgroundContact'
 import Programs from './Programs'
 import Testimonials from './Testimonials'
 import Contact from './Contact'
+import { useState } from 'react'
 
-const Screens = () => (
-  <div className="body--container">
-    <Home />
-    <AboutUs />
-    <Services />
-    <Staff />
-    <BackgroundContact />
-    <Programs />
-    <Testimonials />  
-    <Contact />
-  </div>
-)
+const Screens = () => {
+  const [value, setValue] = useState(0)
+
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    setValue(newValue)
+  }
+  return (
+    <div className="body--container">
+      <Home />
+      <AboutUs />
+      <Services />
+      <Staff />
+      <BackgroundContact value={value} handleChange={handleChange} />
+      <Programs />
+      <Testimonials />  
+      <Contact />
+    </div>
+  )
+}
 
 export default Screens

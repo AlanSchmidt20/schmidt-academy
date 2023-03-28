@@ -1,0 +1,60 @@
+export const testimonialsDescription = [
+  {
+    id: '1',
+    image: require('../images/testimonialsCardImageSofie.jpeg'),
+    name: 'Sofie Harangozo',
+    country: 'United States',
+    subTitle: 'International Exchange',
+    description:
+      'My time in Argentina will never be forgotten, and that is all because of the Schmidt family. They took me into their home like one of their own. I spent a month living with strangers but by the end of the trip they felt like family. While I lived with them I took tennis lessons with Brian and he transformed me from a complete klutz to someone able to keep up in the game. The family made it so fun to play tennis, and although I was a complete beginner, they always encouraged me to keep going. I will never be able to thank them enough for the tennis lessons and for my time in Argentina.',
+  },
+  {
+    id: '2',
+    image: require('../images/testimonialsCardImageCarlos.jpeg'),
+    name: 'Carlos Pardo',
+    country: 'Colombia',
+    subTitle: 'International Exchange',
+    description: `I am Carlos Pardo from Colombia. During my stay in Argentina, I lived in the Schmidt family's house. They made me feel welcome as if I were part of the family. I went to train as an Assistant Coach accompanied by Sebastian Schmidt. It was truly an enriching and fulfilling experience. The training was rigorous and adjusted to my level of play. I will support them from Colombia representing the Schmidt Tennis Academy because I want to spread that joyful and passionate way of living tennis.`,
+  },
+  {
+    id: '3',
+    image: require('../images/testimonialsCardImageMiguel.jpeg'),
+    name: 'Miguel A. Dalla Caneva',
+    country: 'Argentina',
+    subTitle: 'Amateour Tennis Player',
+    description: `What an excellent project, my dearest Schmidt family!!!! I say family because we have known each other for 30 years, and those years give me some relevance to say it! The truth is that it has been a huge stroke of luck for me to have crossed paths with Seba (I always tell him) first as a coach and then as a friend. I mentioned the years we have been together in this sport we love to emphasize the importance Seba has in all of this. It is very difficult, and Seba achieved it with the support of his family, to lead a group of students, coaches, colleagues, and friends for so long and make everything work. Sebas' ability to transmit his passion and enthusiasm to us, without forgetting that it is a job for him, with professionalism and absolute dedication, even in cold, hot, or rainy weather, has made all of this possible. Not only did he do this for us, he did something even greater, he passed all of his concepts of work, dedication, and love for this sport on to his children, who deserve a separate chapter of praise. I know that this ACADEMY project, which we just found out about, started a long time ago and has to do with Brian's first trip to study at a university in the USA, with all that implies, detaching from his loved ones, family, and friends, and carrying his feelings in his heart, followed by his brother Alan with the same steps. I have been a student of both of them and I assure you that they have a teaching technique (and patience) and respect worthy of mention. And lastly, the most important thing, the woman behind (and ahead of) this whole enterprise, who managed to unite Seba's friends with his family: Maria Ines, aka La Pipi, as we all know her. Without a doubt, what was born as I just mentioned, without improvisation and with all professionalism always at the forefront, is assured of success. Finally, I invite everyone who wants to start living tennis to do so through this path!!! Schmidt family and Academy, I wish you all the best, I love you, and I will always be with you.`,
+  },
+  {
+    id: '4',
+    image: require('../images/testimonialsCardImageCamila.jpeg'),
+    name: "Martin Bastida - Camila's dad",
+    country: 'Argentina',
+    subTitle: 'AAT Tennis Player sub12',
+    description:
+      'We really love Sebas, he is a great person and as a coach, what can we say, he is the best. He has a love for his profession and has a great track record in training many boys and girls in this exciting sport called tennis. He has the right words to give an instruction, whether it is technical to improve strokes or theoretical to plan a match. Camila adores him, she listens to him all the time, she is always attentive to what her coach tells her in order to keep progressing. He supports her in difficult moments. We are really happy that Camila is part of the Schmidt Tennis Academy and that Sebastian is her coach!',
+  },
+  {
+    id: '5',
+    image: require('../images/testimonialsCardImageMariano.jpeg'),
+    name: 'Mariano De Luca',
+    country: 'Argentina',
+    subTitle: 'Tennis Coach and Player',
+    description: `My name is Mariano De Luca, I am 24 years old and I met the Schmidt family about 7 to 8 years ago. I arrived at Temperley Lawn Tennis Club and they welcomed me in the best way. Shortly after, I became very good friends with Brian Schmidt and Alan Schmidt, we trained together and competed in the same team. At the same time, I started teaching tennis classes at TLTC's academy, a hardworking person who knows a lot about this sport and helped me a lot with his knowledge. Over the years, they became like a family to me, we get together very often and go out to eat at least once a week with one of them. We even spent Christmas together with them and Pipi (Sebastian's wife and Brian and Alan's mother) who welcomed us into her home and made us feel very comfortable. They are a family that breathes tennis, good energy, and a lot of passion and dedication for what they do. I have no doubt that their new project will grow and they will achieve everything they set out to do.`,
+  },
+  {
+    id: '6',
+    image: require('../images/testimonialsCardImageMaxi.jpeg'),
+    name: 'Maxi Zanazzi',
+    country: 'Argentina',
+    subTitle: 'Tennis Coach and Player',
+    description: `Hi, my name is Maxi Zanazzi, friend and colleague of both Brian and Seba. I can only use praise when referring to them because, in Seba's case, he was one of my trainers both for competition and for the professional environment, teaching me my first steps and providing me with tools to develop myself in the teaching of our beloved sport. A passion that we were able to share over 15 years on the court. As for Brai, a great friend with whom we shared many hours of hard training, competitions, and work. We carried out classes with different groups of students, both with schoolchildren and advanced level groups, organizing representative teams and social events at the institutional level. In this new and great beginning of the Schmidt Academy, I only wish them a lot of success, knowing that they will always count on me and above all, that they can transmit the great values of the sport as they have done over so many years! Good luck, my friends.`,
+  },
+  {
+    id: '7',
+    image: require('../images/testimonialsCardImageMarcos.jpeg'),
+    name: 'Marcos De Luca',
+    country: 'Argentina',
+    subTitle: 'Former Tennis Coach and Player',
+    description: `How nice it was to be a part of "Enterprice" and to be included so quickly in a group of beautiful people. Good luck in this new stage for the entire family, and as for Sebita, nothing can go wrong. I miss you all and hope to see you soon, especially Alu, who is like a brother to me, and despite the distance, our relationship transcends everything. Best of luck and see you next time.`,
+  },
+]

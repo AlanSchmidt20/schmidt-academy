@@ -1,4 +1,3 @@
-import React from 'react'
 import Carousel from 'react-material-ui-carousel'
 import { Image } from 'mui-image'
 import './Home.css'
@@ -21,14 +20,14 @@ export const images = [
   },
 ]
 
-function home(props: any) {
+function Home(props: any) {
   return (
     <Carousel className="carousel--component">
-      {images.map(image => (
-        <Image className="carousel--image" src={image.imgPath} />
+      {images.map((image, idx) => (
+        <Image className="carousel--image" src={image.imgPath} key={idx} />
       ))}
     </Carousel>
   )
 }
 
-export default home
+export default Home

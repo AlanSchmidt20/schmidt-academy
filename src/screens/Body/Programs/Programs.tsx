@@ -12,7 +12,7 @@ export default function OutlinedCard() {
   return (
     <Card
       className="ourPrograms--component"
-      sx={{ boxShadow: 'none', margin: '50px 0', height: 600 }}>
+      sx={{ boxShadow: 'none', margin: '50px 0' /* , height: 600 */ }}>
       <CardContent
         className="ourPrograms--content "
         sx={{ display: 'flex', justifyContent: 'space-around' }}>
@@ -22,7 +22,7 @@ export default function OutlinedCard() {
           src={programCardImage}
           sx={{ width: '50%' }}
         />
-        <p
+        <div
           className="ourPrograms--text"
           style={{
             width: '30%',
@@ -30,22 +30,30 @@ export default function OutlinedCard() {
             fontSize: 'large',
             lineHeight: '1.9',
             fontWeight: 500,
+            fontFamily: 'Helvetica Neue LT',
           }}>
-          <Typography gutterBottom variant="h4" component="div" fontWeight="bold">
-            Our Programas
+          <Typography
+            gutterBottom
+            variant="h3"
+            component="div"
+            fontWeight="bold"
+            fontFamily="Helvetica Neue LT">
+            OUR PROGRAMS
           </Typography>
-          At the Schmidt Tennis Academy we offer a variety of training programs that will allow you
-          to quickly obtain significant results, and that will give you all the keys to achieve your
-          goals. Joining the Schmidt Tennis Academy for a course means joining a family of
-          enthusiasts led by a team of teachers using the Schmidt methodology has proven its
-          efficiency for 25 years.
+          At the Schmidt Tennis Academy we offer a variety of training programs that will
+          allow you to quickly obtain significant results, and that will give you all the
+          keys to achieve your goals. Joining the Schmidt Tennis Academy for a course
+          means joining a family of enthusiasts led by a team of teachers using the
+          Schmidt methodology has proven its efficiency for 25 years.
           <Link
             style={{ textDecoration: 'none' }}
             to={'/programs'}
             onClick={() => {
               window.scroll(0, 0)
             }}>
-            <CardActions className="ourPrograms--action" sx={{ padding: 0, marginTop: '20px' }}>
+            <CardActions
+              className="ourPrograms--action"
+              sx={{ padding: 0, marginTop: '20px' }}>
               <Button
                 className="programCard--button"
                 variant="contained"
@@ -55,7 +63,7 @@ export default function OutlinedCard() {
               </Button>
             </CardActions>
           </Link>
-        </p>
+        </div>
       </CardContent>
     </Card>
   )

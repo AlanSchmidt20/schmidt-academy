@@ -1,12 +1,10 @@
 import InstagramIcon from '@mui/icons-material/Instagram'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
-import PlaceIcon from '@mui/icons-material/Place'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 
 export const contactUs = [
-  {
+  /*   {
     title: 'Address:',
     icon: (
       <a
@@ -16,7 +14,7 @@ export const contactUs = [
       </a>
     ),
     description: ' Ituzaingo 251, Lomas de Zamora, Buenos Aires',
-  },
+  }, */
   {
     title: 'Phone:',
     icon: (
@@ -31,7 +29,7 @@ export const contactUs = [
   {
     title: 'Email: ',
     icon: (
-      <a href="mailto:schmidttennisacademy@gmail.com" target="_blank">
+      <a href="mailto:schmidttennisacademy@gmail.com" target="_blank" rel="noreferrer">
         <EmailIcon fontSize="medium" sx={{ ml: 1, mr: 1, color: '#007bff' }} />
       </a>
     ),
@@ -40,16 +38,14 @@ export const contactUs = [
   {
     title: 'Social Media: ',
     iconOne: (
-      <a href="https://www.instagram.com/schmidt_tennis_academy/" target="_blank">
+      <a
+        href="https://www.instagram.com/schmidt_tennis_academy/"
+        target="_blank"
+        rel="noreferrer">
         <InstagramIcon fontSize="medium" sx={{ ml: 1, color: '#007bff' }} />
       </a>
     ),
-    inconTwo: (
-      <a /* href="" target="_blank" */>
-        <LinkedInIcon fontSize="medium" sx={{ ml: 1, color: '#007bff' }} />
-      </a>
-    ),
-    iconThree: (
+    iconTwo: (
       <a /* href="" target="_blank" */>
         <WhatsAppIcon fontSize="medium" sx={{ ml: 1, color: '#007bff' }} />
       </a>

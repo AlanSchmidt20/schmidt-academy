@@ -1,27 +1,37 @@
-import * as React from 'react'
 import Card from '@mui/material/Card'
 import Box from '@mui/material/Box'
-import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { team } from '../../../content/team'
 import { teamCeo } from '../../../content/team'
 
-const ceoCard = teamCeo.map(ceo => (
-  <Card className="member--component" sx={{ maxWidth: 300, margin: '0 10', textAlign: 'center' }}>
+const ceoCard = teamCeo.map((ceo, idx) => (
+  <Card
+    key={idx}
+    className="member--component"
+    sx={{ maxWidth: 300, margin: '0 10', textAlign: 'center' }}>
     <CardMedia component="img" height="370" src={`${ceo.img}`} />
     <CardContent>
-      <Typography gutterBottom variant="h5" component="div" sx={{ marginBottom: 0 }}>
+      <Typography
+        gutterBottom
+        variant="h5"
+        component="div"
+        sx={{ marginBottom: 0, fontFamily: 'Helvetica Neue LT' }}>
         {ceo.name}
       </Typography>
       <Typography
         gutterBottom
         variant="h6"
-        sx={{ fontSize: 'small', marginTop: 0, fontWeight: 'bold' }}>
+        sx={{
+          fontSize: 'small',
+          marginTop: 0,
+          fontWeight: 'bold',
+          fontFamily: 'Helvetica Neue LT',
+        }}>
         {ceo.title}
       </Typography>
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body1" color="text.secondary" fontFamily="Helvetica Neue LT">
         {ceo.description}
       </Typography>
       {/*       <Typography variant="body2" color="text.secondary">
@@ -31,25 +41,34 @@ const ceoCard = teamCeo.map(ceo => (
   </Card>
 ))
 
-const memberCard = team.map(member => (
-  <Card className="member--component" sx={{ maxWidth: 300, margin: '0 10', textAlign: 'center' }}>
+const memberCard = team.map((member, idx) => (
+  <Card
+    key={idx}
+    className="member--component"
+    sx={{ maxWidth: 300, margin: '0 10', textAlign: 'center' }}>
     <CardMedia component="img" height="370" src={`${member.img}`} />
     <CardContent>
-      <Typography gutterBottom variant="h5" component="div" sx={{ marginBottom: 0 }}>
+      <Typography
+        gutterBottom
+        variant="h5"
+        component="div"
+        sx={{ marginBottom: 0, fontFamily: 'Helvetica Neue LT' }}>
         {member.name}
       </Typography>
       <Typography
         gutterBottom
         variant="h6"
-        sx={{ fontSize: 'small', marginTop: 0, fontWeight: 'bold' }}>
+        sx={{
+          fontSize: 'small',
+          marginTop: 0,
+          fontWeight: 'bold',
+          fontFamily: 'Helvetica Neue LT',
+        }}>
         {member.title}
       </Typography>
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body1" color="text.secondary" fontFamily="Helvetica Neue LT">
         {member.description}
       </Typography>
-      {/*       <Typography variant="body2" color="text.secondary">
-        {member.icon}
-      </Typography> */}
     </CardContent>
   </Card>
 ))
@@ -57,7 +76,14 @@ const memberCard = team.map(member => (
 export default function StaffCard() {
   return (
     <Box className="memberCard--container">
-      <h1 style={{ textAlign: 'center' }}>Meet the Team</h1>
+      <h1
+        style={{
+          textAlign: 'center',
+          fontFamily: 'Helvetica Neue LT',
+          fontSize: '60px',
+        }}>
+        MEET THE TEAM
+      </h1>
       <Card
         className="memberCard--component"
         variant="outlined"

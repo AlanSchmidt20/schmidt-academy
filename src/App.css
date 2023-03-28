@@ -9,6 +9,7 @@
 
 .screens--wraper {
   padding-top: 50px;
+  height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -61,9 +62,9 @@ nav {
 
 .info--container {
   display: flex;
-  /*   justify-content: center; */
   justify-content: space-evenly;
   margin-top: 20px;
+  align-items: center;
 }
 
 .aboutUs--image {
@@ -74,27 +75,27 @@ nav {
   background: black;
   color: #fff;
   padding-top: 5px;
+  height: 100% !important;
+  display: grid;
+  flex-direction: column;
+  font-family: 'Helvetica Neue LT';
 }
 .service--container {
-  /*   width: max-content; */
   margin-top: 20px;
   background: black !important;
-  /*   text-align: center !important; */
+  font-family: 'Helvetica Neue LT';
 }
 
 .service--card {
   display: flex;
   text-align: center;
   justify-content: center;
-  /*   justify-content: center;
-  align-content: center;
-  width: 70%;
-  margin: 0 10px; */
-  /*   color: white !important; */
+  font-family: 'Helvetica Neue LT';
   background: none !important;
   border: none !important;
   height: 290px;
 }
+
 .card--container {
   background-color: black !important;
   color: white !important;
@@ -128,25 +129,17 @@ nav {
   font-family: sans-serif;
   font-size: 38px;
   margin-top: 20px;
+  text-decoration: none !important;
 }
 
 .backgroundContact--btn {
-  background-color: #2196f3;
-  border-radius: 3px;
-  font-size: 18px;
-  transition: 0.5s;
-  height: 50px;
-  text-align: center;
-  justify-content: center;
-  width: fit-content;
-  padding: 0 10px;
-  align-items: center;
-  display: inline-flex;
-  color: #fff;
-  transition: 0.5s;
   text-decoration: none;
 }
 
+.contact-btn {
+  width: 13% !important;
+  text-decoration: none !important;
+}
 .program--item {
   margin: 20px 0 !important;
   background: #2196f3;
@@ -216,14 +209,18 @@ nav {
 }
 
 .testimonialsCard--container {
-  margin: 60px 0;
+  /*   margin: 60px 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonials--component {
   margin: 0 20px;
   box-shadow: none !important;
   justify-content: center;
-  height: 260px !important;
+  height: 350px !important;
   position: relative;
 }
 
@@ -245,29 +242,38 @@ nav {
 .testimonials--content {
   margin-top: 70px;
   background: #efefef;
-  height: 170px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact--component {
   justify-content: center;
 }
 
-/* CONTACT -- Comments field */
-.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
-  width: 58.5ch !important;
+.message-input {
+  width: 90% !important;
 }
 
+/* CONTACT -- Comments field */
+/* .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 58.5ch;
+} */
+
 .submit--button {
-  width: inherit !important;
+  width: 30ch !important;
   height: 55px !important;
 }
-.css-1hof3tc {
+/* .css-1hof3tc {
   width: 58.5ch !important;
-}
+} */
 
 .contact--container {
   background: #efefef;
   padding: 20px 0;
+  height: 100%;
 }
 
 .contact--form {
@@ -278,7 +284,7 @@ nav {
   width: 40%;
   margin-top: 10px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1020px) {
   .nav-btn {
     visibility: visible;
     opacity: 1;
@@ -336,8 +342,11 @@ nav {
   }
 
   .info--container {
-    display: block;
-    margin: 0 20px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .aboutUs--image {
@@ -351,19 +360,29 @@ nav {
 
   .serviceCard--container {
     height: unset !important;
+    height: unset !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .service--card {
     display: block;
     align-self: center;
     height: unset;
-    margin-left: 40px;
     padding-bottom: 20px;
+  }
+
+  .memberCard--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .memberCard--component {
     display: block !important;
-    margin-left: 25px;
   }
   .member--component {
     margin-bottom: 20px;
@@ -395,6 +414,7 @@ nav {
   .programsCard--content {
     margin: 0 !important;
     width: auto !important;
+    font-size: x-large;
   }
 
   .programCard--actionArea {
@@ -409,17 +429,27 @@ nav {
   }
 
   .ourPrograms--component {
-    height: unset !important;
-    width: 90% !important;
-    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
-      0px 1px 3px 0px rgb(0 0 0 / 12%) !important;
-    margin-left: 15px !important;
-    border-radius: 4px !important;
+    /* border-radius: 4px!important; */
+    /* box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12)!important; */
+    height: 945px;
+    /* margin-left: 15px!important; */
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 20px; */
   }
 
   .ourPrograms--content {
-    display: block !important;
-    height: unset !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+    height: 95%;
   }
 
   .ourPrograms--image,
@@ -442,15 +472,20 @@ nav {
   }
 
   .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
-    width: 33.9ch !important;
+    /* width: 33.9ch !important; */
+    width: 100% !important;
   }
 
   .textField--input {
-    width: 30ch !important;
+    width: 90% !important;
   }
   .contact--form {
-    width: 80% !important;
-    margin: 0 25px;
+    width: 100% !important;
+    /* margin: 0 25px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact--container {
@@ -461,13 +496,24 @@ nav {
     display: block !important;
   }
   .contact--information {
-    margin: 0 35px;
-    width: 80%;
-    display: block;
+    /*   margin: 0 35px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactInformation-items {
+    align-items: baseline;
+  }
+
+  .css-nen11g-MuiStack-root {
+    width: 90%;
   }
 
   .submit--button {
-    width: 100% !important;
+    width: 90% !important;
   }
 
   .css-1dydd9z-MuiPaper-root {
@@ -494,6 +540,17 @@ nav {
   }
 
   .css-1hof3tc {
-    width: 34ch !important;
+    width: 100% !important;
+  }
+  .css-j7qwjs {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1021px) and (max-width: 1177px) {
+  .testimonial--description {
+    font-size: 12.7px !important;
   }
 }

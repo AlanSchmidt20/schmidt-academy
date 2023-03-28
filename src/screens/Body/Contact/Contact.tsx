@@ -17,12 +17,14 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.primary,
 }))
 
-const contactInformation = contactUs.map(contact => (
-  <Stack>
-    <Item sx={{ display: 'flex' }}>
+const contactInformation = contactUs.map((contact, idx) => (
+  <Stack key={idx}>
+    <Item
+      className="contactInformation-items"
+      sx={{ display: 'flex', fontFamily: 'Helvetica Neue LT' }}>
       <b>{contact.title} </b> {contact.icon}
       {contact.description}
-      {contact.iconOne} {contact.inconTwo} {contact.iconThree}
+      {contact.iconOne} {contact.iconTwo}
     </Item>
   </Stack>
 ))
@@ -50,21 +52,23 @@ export default function ContactUs() {
   const sendEmail = (e: { target: any; preventDefault: () => void }) => {
     e.preventDefault()
 
-    emailjs.sendForm('service_qnyh18p', 'template_znafdfh', form.current, 'GSr3XNhto1i_9ltj7').then(
-      result => {
-        console.log(result.text)
-        setFormData({
-          firstName: '',
-          lastName: '',
-          phoneNumber: '',
-          email: '',
-          message: '',
-        })
-      },
-      error => {
-        console.log(error.text)
-      }
-    )
+    emailjs
+      .sendForm('service_qnyh18p', 'template_znafdfh', form.current, 'GSr3XNhto1i_9ltj7')
+      .then(
+        result => {
+          console.log(result.text)
+          setFormData({
+            firstName: '',
+            lastName: '',
+            phoneNumber: '',
+            email: '',
+            message: '',
+          })
+        },
+        error => {
+          console.log(error.text)
+        }
+      )
   }
 
   const [modalOpen, setModalOpen] = useState(false)
@@ -80,12 +84,21 @@ export default function ContactUs() {
 
   return (
     <div className="contact--container">
-      <h1 style={{ textAlign: 'center', marginBottom: '40px' }}>CONTACT US</h1>
+      <h1
+        style={{
+          textAlign: 'center',
+          margin: '20px 0',
+          marginBottom: '30px',
+          fontFamily: 'Helvetica Neue LT',
+          fontSize: '60px',
+        }}>
+        CONTACT US
+      </h1>
       <Box
         className="contact--component"
         sx={{
           display: 'flex',
-          '& .MuiTextField-root': { m: 1, width: '25ch' },
+          '& .MuiTextField-root': { m: 1, width: '43.5%' },
         }}>
         <form
           ref={form}
@@ -97,7 +110,7 @@ export default function ContactUs() {
             onChange={handleChange}
             name="firstName"
             value={formData.firstName}
-            id="outlined-basic"
+            id="firstname"
             label="First Name"
             variant="outlined"
           />
@@ -106,8 +119,8 @@ export default function ContactUs() {
             type="text"
             onChange={handleChange}
             name="lastName"
+            id="lastName"
             value={formData.lastName}
-            id="outlined-basic"
             label="Last Name"
             variant="outlined"
           />
@@ -117,7 +130,7 @@ export default function ContactUs() {
             onChange={handleChange}
             name="phoneNumber"
             value={formData.phoneNumber}
-            id="outlined-basic"
+            id="phoneNumber"
             label="Phone Number"
             variant="outlined"
           />
@@ -127,19 +140,19 @@ export default function ContactUs() {
             onChange={handleChange}
             name="email"
             value={formData.email}
-            id="outlined-basic"
+            id="email"
             label="Email"
             variant="outlined"
           />
           <TextField
-            className="textField--input"
+            className="textField--input message-input"
             type="text"
             onChange={handleChange}
             name="message"
             multiline
             maxRows={4}
             value={formData.message}
-            id="outlined-basic"
+            id="name"
             label="Message"
             variant="outlined"
           />

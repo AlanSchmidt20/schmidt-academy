@@ -21,7 +21,7 @@ export default function AlertDialog(props: { onClose: any; open: any }) {
         <DialogTitle id="alert-dialog-title">{'Thanks for contacting us'}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            The message has been received, we will contact you soon, regards.
+            Your message has been received, we will contact you soon.
           </DialogContentText>
         </DialogContent>
         <DialogActions>

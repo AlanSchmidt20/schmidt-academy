@@ -6,26 +6,26 @@ import HomeIcon from '@mui/icons-material/Home'
 export const services = [
   {
     icon: <SportsTennisIcon fontSize="large" sx={{ mt: 2 }} />,
-    service: 'Tennis',
+    service: 'TENNIS',
     description:
-      'Our tennis program offer classes that suits your needs, based on your age and level. Looking for the best plan to make you a better player.',
+      "Our tennis program offer classes that suits our player's needs, based on their age and level. Looking for the best plan to make them a better players.",
   },
   {
     icon: <FitnessCenterIcon fontSize="large" sx={{ mt: 2 }} />,
-    service: 'Conditioning',
+    service: 'CONDITIONING',
     description:
-      'Our conditoning service offers a gym and a personal trainer to raise your physical condition to the next level and improve your performance.',
+      'Our conditoning service offers a gym and a personal trainer to raise their physical condition to the next level and improve their perfomance.',
   },
   {
     icon: <LocalDiningIcon fontSize="large" sx={{ mt: 2 }} />,
-    service: 'Nutrition',
+    service: 'NUTRITION',
     description:
-      'Our nutritional program is designed to provide our players enough energy and the necessary nutrients in order to enhance their performance.',
+      'Our nutritional program is designed to provide our players enough energy and the necessary nutrients in order to enhance their health.',
   },
   {
     icon: <HomeIcon fontSize="large" sx={{ mt: 2 }} />,
-    service: 'Accommodation',
+    service: 'HOUSING',
     description:
-      'We offer accommodation and transportation. Our purpose is to make our players feel comfortable and like they are at home.',
+      'We offer comfortable accommodations and convenient transportation. We want our players to feel at ease and at home.',
   },
 ]
