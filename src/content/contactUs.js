@@ -42,7 +42,7 @@ export const contactUs = [
       </a>
     ),
     iconTwo: (
-      <a href="https://wa.me/5491161913409" target="_blank" rel="noreferrer">
+      <a href="https://wa.me/17868347226" target="_blank" rel="noreferrer">
         <WhatsAppIcon fontSize="medium" sx={{ ml: 1, color: '#007bff' }} />
       </a>
     ),
