@@ -78,19 +78,22 @@ nav {
   height: 100% !important;
   display: grid;
   flex-direction: column;
-  font-family: 'Helvetica Neue LT';
+  /*   font-family: 'Helvetica Neue LT';
+ */
 }
 .service--container {
   margin-top: 20px;
   background: black !important;
-  font-family: 'Helvetica Neue LT';
+  /*   font-family: 'Helvetica Neue LT';
+ */
 }
 
 .service--card {
   display: flex;
   text-align: center;
   justify-content: center;
-  font-family: 'Helvetica Neue LT';
+  /*   font-family: 'Helvetica Neue LT';
+ */
   background: none !important;
   border: none !important;
   height: 290px;

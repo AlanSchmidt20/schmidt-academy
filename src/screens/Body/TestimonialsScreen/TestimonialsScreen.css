@@ -51,8 +51,13 @@ h3 {
 @media screen and (max-width: 854px) {
   .testimonialsScreen--container {
     flex-direction: column;
-    width: 70%;
+    width: 95%;
+    padding: 0;
   }
+  .testimonialScreen-image {
+    width: 100%;
+  }
+
   .testimonialsScreen-information-container {
     display: flex;
     flex-direction: column;

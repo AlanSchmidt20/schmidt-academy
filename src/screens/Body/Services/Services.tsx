@@ -14,16 +14,11 @@ const serviceCard = services.map((service, idx) => (
       display: 'flex',
       border: 0,
       color: 'black',
-      fontFamily: 'Helvetica Neue LT',
     }}>
     <CardActionArea className="card--container">
       {service.icon}
       <CardContent>
-        <Typography
-          gutterBottom
-          variant="h5"
-          component="div"
-          fontFamily="Helvetica Neue LT">
+        <Typography gutterBottom variant="h5" component="div">
           {service.service}
         </Typography>
         <Typography variant="body2">{service.description}</Typography>
@@ -36,8 +31,14 @@ export default function OutlinedCard() {
   return (
     <Box
       className="serviceCard--container"
-      sx={{ minWidth: 275, width: 'auto', height: 400, fontFamily: 'Helvetica Neue LT' }}>
-      <h1 style={{ textAlign: 'center', fontSize: '60px', marginBottom: '0' }}>
+      sx={{ minWidth: 275, width: 'auto', height: 400 }}>
+      <h1
+        style={{
+          textAlign: 'center',
+          fontSize: '60px',
+          marginBottom: '0',
+          fontFamily: 'Helvetica Neue LT',
+        }}>
         SERVICES
       </h1>
       <Card className="service--card" sx={{ border: 0 }}>

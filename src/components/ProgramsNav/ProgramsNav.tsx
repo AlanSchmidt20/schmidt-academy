@@ -42,17 +42,11 @@ export default function ProgramsInformation() {
                 /* height="400px" */ src={`${programDescription.img}`}
               />
               <CardContent className="programsCard--content" sx={{ width: '100%' }}>
-                <Typography
-                  gutterBottom
-                  variant="h3"
-                  component="div"
-                  fontWeight="bold"
-                  fontFamily="Helvetica Neue LT">
+                <Typography gutterBottom variant="h3" component="div" fontWeight="bold">
                   {programDescription.title}
                 </Typography>
                 <Typography
                   gutterBottom
-                  fontFamily="Helvetica Neue LT"
                   className="programCard--subDescription"
                   variant="body1">
                   {programDescription.description}
@@ -60,20 +54,17 @@ export default function ProgramsInformation() {
                 <Typography
                   className="programCard--subTitle"
                   gutterBottom
-                  fontFamily="Helvetica Neue LT"
                   variant="body1">
                   {programDescription.ageTitle}
                 </Typography>
                 <Typography
                   gutterBottom
-                  fontFamily="Helvetica Neue LT"
                   className="programCard--subDescription"
                   variant="body1">
                   {programDescription.subDescription}
                 </Typography>
                 <Typography
                   gutterBottom
-                  fontFamily="Helvetica Neue LT"
                   className="programCard--subTitle"
                   variant="body1">
                   {programDescription.trainingTitle}
@@ -83,7 +74,7 @@ export default function ProgramsInformation() {
                   style={{
                     margin: 0,
                     paddingInlineStart: 'inherit',
-                    fontFamily: 'Helvetica Neue LT',
+
                     fontSize: 'medium',
                   }}>
                   <li>{programDescription.tennisTime}</li>

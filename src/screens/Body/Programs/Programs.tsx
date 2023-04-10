@@ -30,7 +30,6 @@ export default function OutlinedCard() {
             fontSize: 'large',
             lineHeight: '1.9',
             fontWeight: 500,
-            fontFamily: 'Helvetica Neue LT',
           }}>
           <Typography
             gutterBottom

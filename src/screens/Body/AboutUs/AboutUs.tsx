@@ -18,7 +18,6 @@ const AboutUs = () => (
           fontSize: 'large',
           lineHeight: 1.9,
           fontWeight: 300,
-          fontFamily: 'Helvetica Neue LT',
           textAlign: 'justify',
         }}>
         Our Tennis Academy was born as a result of the passion that has always existed in

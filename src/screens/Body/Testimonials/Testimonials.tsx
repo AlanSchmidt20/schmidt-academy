@@ -21,7 +21,6 @@ const testimonialCard = testimonials.map((testimonial, idx) => (
       <Typography
         variant="body2"
         color="text.secondary"
-        fontFamily="Helvetica Neue LT"
         className="testimonial--description">
         {testimonial.description}
       </Typography>
@@ -29,14 +28,12 @@ const testimonialCard = testimonials.map((testimonial, idx) => (
         gutterBottom
         variant="h5"
         component="div"
-        fontFamily="Helvetica Neue LT"
         sx={{ marginBottom: 0, color: '#007bff' }}>
         {testimonial.name}
       </Typography>
       <Typography
         gutterBottom
         variant="h6"
-        fontFamily="Helvetica Neue LT"
         sx={{ fontSize: 'small', fontWeight: 'bold' }}>
         {testimonial.title}
       </Typography>

@@ -13,11 +13,7 @@ const ceoCard = teamCeo.map((ceo, idx) => (
     sx={{ maxWidth: 300, margin: '0 10', textAlign: 'center' }}>
     <CardMedia component="img" height="370" src={`${ceo.img}`} />
     <CardContent>
-      <Typography
-        gutterBottom
-        variant="h5"
-        component="div"
-        sx={{ marginBottom: 0, fontFamily: 'Helvetica Neue LT' }}>
+      <Typography gutterBottom variant="h5" component="div" sx={{ marginBottom: 0 }}>
         {ceo.name}
       </Typography>
       <Typography
@@ -27,11 +23,10 @@ const ceoCard = teamCeo.map((ceo, idx) => (
           fontSize: 'small',
           marginTop: 0,
           fontWeight: 'bold',
-          fontFamily: 'Helvetica Neue LT',
         }}>
         {ceo.title}
       </Typography>
-      <Typography variant="body1" color="text.secondary" fontFamily="Helvetica Neue LT">
+      <Typography variant="body1" color="text.secondary">
         {ceo.description}
       </Typography>
       {/*       <Typography variant="body2" color="text.secondary">
@@ -48,11 +43,7 @@ const memberCard = team.map((member, idx) => (
     sx={{ maxWidth: 300, margin: '0 10', textAlign: 'center' }}>
     <CardMedia component="img" height="370" src={`${member.img}`} />
     <CardContent>
-      <Typography
-        gutterBottom
-        variant="h5"
-        component="div"
-        sx={{ marginBottom: 0, fontFamily: 'Helvetica Neue LT' }}>
+      <Typography gutterBottom variant="h5" component="div" sx={{ marginBottom: 0 }}>
         {member.name}
       </Typography>
       <Typography
@@ -62,11 +53,10 @@ const memberCard = team.map((member, idx) => (
           fontSize: 'small',
           marginTop: 0,
           fontWeight: 'bold',
-          fontFamily: 'Helvetica Neue LT',
         }}>
         {member.title}
       </Typography>
-      <Typography variant="body1" color="text.secondary" fontFamily="Helvetica Neue LT">
+      <Typography variant="body1" color="text.secondary">
         {member.description}
       </Typography>
     </CardContent>

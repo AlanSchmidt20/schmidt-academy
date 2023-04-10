@@ -21,10 +21,10 @@ export const testimonials = [
     title: 'International Exchange',
   },
   {
-    img: require('../images/marianoTestimonials.jpeg'),
+    img: require('../images/MiguelTestimonioPortadaImage.jpeg'),
     description:
-      "I met the Schmidt family 7/8 years ago. They received me in the best way and shortly after I started teaching tennis classes at Sebastian Schmidt's academy, a hardworking person who knows a lot about this sport and helped me a lot with his knowledge.",
-    name: 'Mariano De Luca',
-    title: 'Tennis Coach',
+      'What an excellent project, my dearest Schmidt family!!!! I say family because we have known each other for 30 years! The truth is that it has been a huge stroke of luck for me to have crossed paths with Seba, first as a coach and then as a friend.',
+    name: 'Miguel A. Dalla Caneva',
+    title: 'Amateour Tennis Player',
   },
 ]

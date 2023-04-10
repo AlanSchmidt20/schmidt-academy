@@ -10,8 +10,8 @@ const TestminonialsCard = testimonialsDescription.map(testimonialItem => {
     <div key={testimonialItem.id} className="testimonialsScreen--container">
       <div className="testimonialsScreen-image-container">
         <img
+          className="testimonialScreen-image"
           src={`${testimonialItem.image}`}
-          heigth="400px"
           width="400px"
           alt={`${testimonialItem.name}`}
         />

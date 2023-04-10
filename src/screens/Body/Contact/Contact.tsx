@@ -19,9 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const contactInformation = contactUs.map((contact, idx) => (
   <Stack key={idx}>
-    <Item
-      className="contactInformation-items"
-      sx={{ display: 'flex', fontFamily: 'Helvetica Neue LT' }}>
+    <Item className="contactInformation-items" sx={{ display: 'flex' }}>
       <b>{contact.title} </b> {contact.icon}
       {contact.description}
       {contact.iconOne} {contact.iconTwo}
