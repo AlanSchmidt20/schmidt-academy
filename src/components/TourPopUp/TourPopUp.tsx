@@ -21,7 +21,13 @@ const TourPopUp = () => {
         <div className="tourPopUp-close">
           <CloseIcon onClick={handleClose} />
         </div>
-        <video src={videoTour} controls autoPlay muted />
+        <video
+          src={videoTour}
+          autoPlay
+          controls
+          loop
+          controlsList="nodownload nofullscreen noremoteplayback"
+        />
         <Link
           style={{ textDecoration: 'none', margin: ' 0 auto', marginTop: '5px' }}
           to={'/programs'}

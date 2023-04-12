@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom'
 const Tour = () => {
   const videoTour = require('../../images/videoTour.mp4')
   const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    videoRef.current?.play()
+  }, [])
 
   const handleVideoClick = () => {
     if (videoRef.current) {
@@ -35,7 +39,6 @@ const Tour = () => {
           loop
           autoPlay
           playsInline
-          muted
           onClick={handleVideoClick}
           ref={videoRef}
           sx={{ width: '50%' }}
