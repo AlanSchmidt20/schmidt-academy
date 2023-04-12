@@ -39,7 +39,7 @@ const Tour = () => {
             component="div"
             fontWeight="bold"
             fontFamily="Helvetica Neue LT">
-            OUR PROGRAMS
+            MIAMI TENNIS TOUR 2023
           </Typography>
           At the Schmidt Tennis Academy we offer a variety of training programs that will
           allow you to quickly obtain significant results, and that will give you all the
