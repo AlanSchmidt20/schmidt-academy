@@ -41,7 +41,7 @@ export default function ProgramsInformation() {
       <Card className="" variant="outlined" sx={{ border: 'none' }}>
         {programsDescription.map((programDescription, idx) => {
           const isVideo = programDescription.id === 1
-
+          const isIntensive = programDescription.id === 2 || programDescription.id === 4
           return (
             <div ref={asd} key={idx} className="programsCard--wrapper">
               <Card
@@ -71,12 +71,12 @@ export default function ProgramsInformation() {
                   <Typography gutterBottom variant="h3" component="div" fontWeight="bold">
                     {programDescription.title}
                   </Typography>
-                  <Typography
+                  {/*                   <Typography
                     gutterBottom
                     className="programCard--subDescription"
                     variant="body1">
                     {programDescription.description}
-                  </Typography>
+                  </Typography> */}
                   <Typography
                     className="programCard--subTitle"
                     gutterBottom
@@ -103,7 +103,15 @@ export default function ProgramsInformation() {
 
                       fontSize: 'medium',
                     }}>
-                    <li>{programDescription.tennisTime}</li>
+                    <li>
+                      {programDescription.tennisTime}
+                      {isIntensive && (
+                        <ul className="isItensive-list">
+                          <li>{programDescription.tennisMorning}</li>
+                          <li>{programDescription.tennisAfternoon}</li>
+                        </ul>
+                      )}
+                    </li>
                     <li>{programDescription.physicalTime}</li>
                   </ul>
                   <CardActions className="programCard--actionArea">

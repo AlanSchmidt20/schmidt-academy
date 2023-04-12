@@ -27,11 +27,11 @@ const Tour = () => {
 
   return (
     <Card
-      className="ourPrograms--component"
+      className="ourPrograms--component tour-component"
       sx={{ boxShadow: 'none', margin: '50px 0' /* , height: 600 */ }}>
       <CardContent
-        className="ourPrograms--content "
-        sx={{ display: 'flex', justifyContent: 'space-around' }}>
+        className="ourPrograms--content tour-content"
+        sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
         <CardMedia
           component="video"
           className="ourPrograms--image"

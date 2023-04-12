@@ -181,6 +181,10 @@ nav {
   color: #ed6c02;
 }
 
+.isItensive-list {
+  padding: 0 20px;
+}
+
 .programCard--subDescription {
   margin-bottom: 15px !important;
 }
@@ -439,6 +443,15 @@ nav {
   .programCard--button {
     width: unset !important;
     margin: 5px 0 !important;
+  }
+
+  .tour-component {
+    height: 102vh !important;
+    margin: 0 !important;
+  }
+
+  .tour-content {
+    height: 92% !important;
   }
 
   .ourPrograms--component {

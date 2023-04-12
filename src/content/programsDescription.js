@@ -6,11 +6,10 @@ export const programsDescription = [
     description:
       'The tennis and physical training sessions will be adapted to the level of the young players',
     ageTitle: 'FOR AGES 10 AND OVER',
-    subDescription:
-      '6 days of intensive training for players who want to experience something new.',
+    subDescription: `'6 days of intensive training for players who want to experience something new.'`,
     trainingTitle: 'DEDICATED TRAINING TIME',
-    tennisTime: 'Tennis: 3hrs/day',
-    physicalTime: 'Physical fitness: 2hrs/day',
+    tennisTime: 'Tennis: 3hss/day',
+    physicalTime: 'Physical fitness: 2hs/day',
   },
   {
     id: 2,
@@ -19,21 +18,22 @@ export const programsDescription = [
     description:
       'The tennis and physical training sessions will be adapted to the level of the young players',
     ageTitle: 'FOR AGES 10 AND OVER',
-    subDescription:
-      '6 days of intensive training for players who want to experience something new.',
+    subDescription: `Our 6-day intensive camp provides personalized tennis and physical training for young players of all levels. Our experienced coaches tailor sessions to each player's skill level, covering technical, tactical, and strategic aspects of the game. Our camp offers an unforgettable experience where players can thrive both on and off the court.`,
     trainingTitle: 'DEDICATED TRAINING TIME',
-    tennisTime: 'Tennis: 3hrs/day',
-    physicalTime: 'Physical fitness: 2hrs/day',
+    tennisTime: 'Tennis: 3hs/day',
+    tennisMorning: 'Morning: 1.5hs',
+    tennisAfternoon: 'Afternoon: 1.5hs',
+    physicalTime: 'Physical fitness: 2hs/day',
+    physicalMorning: 'Morning: 1hr',
+    physicalAfternoon: 'Afternoon: 1hr',
   },
   {
     id: 3,
     img: require('../images/HalfDayProgramPhoto1.jpg'),
     title: 'HALF-DAY CAMPS',
-    description:
-      'The tennis and physical training sessions will be adapted to the level of the young players',
+    description: `'The tennis and physical training sessions will be adapted to the level of the young players'`,
     ageTitle: 'FOR AGES 10 AND OVER',
-    subDescription:
-      'From 6 to 15 days, half-day training where players can optimize their tennis level while also socializing with other players at the academy.',
+    subDescription: `In our flexible 6-15 day half-day camp, our tailored training sessions are designed for young players of all levels, with a focus on optimizing their tennis skills. With the opportunity to socialize with other players, our camp offers a dynamic environment for growth. Led by experienced coaches and featuring both tennis and physical training, our program promotes skill development while fostering a sense of community.`,
     trainingTitle: 'DEDICATED TRAINING TIME',
     tennisTime: 'Tennis: 1 hr 30mins/day',
     physicalTime: 'Physical fitness: 1hr/day',
@@ -45,10 +45,13 @@ export const programsDescription = [
     description:
       'The tennis and physical training sessions will be adapted to the level of the young players',
     ageTitle: 'FOR AGES 10 AND OVER',
-    subDescription:
-      '15 days of intensive training for players who are currently in competition.',
+    subDescription: `Our two-week intensive camp is designed for competitive players! With 15 days of focused training, our program is tailored to the skill level of young players. Our expert coaches provide personalized tennis and physical training sessions, optimizing performance on and off the court. Elevate your game in a supportive environment where training is adapted to your needs.`,
     trainingTitle: 'DEDICATED TRAINING TIME',
-    tennisTime: 'Tennis: 3hrs/day',
-    physicalTime: 'Physical fitness: 2hrs/day',
+    tennisTime: 'Tennis: 3hs/day',
+    tennisMorning: 'Morning: 1.5hs',
+    tennisAfternoon: 'Afternoon: 1.5hs',
+    physicalTime: 'Physical fitness: 2hs/day',
+    physicalMorning: 'Morning: 1hr',
+    physicalAfternoon: 'Afternoon: 1hr',
   },
 ]
