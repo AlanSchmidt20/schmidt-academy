@@ -12,8 +12,19 @@ import FormDialog from './ProgamModal/ProgramModal'
 
 export default function ProgramsInformation() {
   const asd = useRef<HTMLDivElement>(null!)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   const [modalOpen, setModalOpen] = useState(false)
+
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      if (videoRef.current.paused) {
+        videoRef.current.play()
+      } else {
+        videoRef.current.pause()
+      }
+    }
+  }
 
   const handleClickOpen = () => {
     setModalOpen(true)
@@ -45,11 +56,14 @@ export default function ProgramsInformation() {
                   width: '95%',
                 }}>
                 <CardMedia
+                  /* height="400px" */
                   component={isVideo ? 'video' : 'img'}
                   className="programImage"
-                  /* height="400px" */ src={`${programDescription.img}`}
-                  {...(isVideo && { controls: true })}
+                  src={`${programDescription.img}`}
                   {...(isVideo && { autoPlay: true })}
+                  {...(isVideo && { playsInline: true })}
+                  {...(isVideo && { onClick: handleVideoClick })}
+                  {...(isVideo && { ref: videoRef })}
                 />
                 <CardContent
                   className={isVideo ? 'isVideo-content' : 'programsCard--content'}

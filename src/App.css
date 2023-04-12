@@ -484,6 +484,10 @@ nav {
     margin-bottom: 30px;
   }
 
+  .defaultButton--btn {
+    width: auto;
+  }
+
   .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
     /* width: 33.9ch !important; */
     width: 100% !important;

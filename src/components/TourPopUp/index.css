@@ -1,0 +1,16 @@
+.tourPopUp-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 5px;
+}
+
+.tourPopUp-close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.tourPopUp-button {
+  width: 100%;
+}

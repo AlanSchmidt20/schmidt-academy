@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
@@ -8,6 +9,17 @@ import { Link } from 'react-router-dom'
 
 const Tour = () => {
   const videoTour = require('../../images/videoTour.mp4')
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      if (videoRef.current.paused) {
+        videoRef.current.play()
+      } else {
+        videoRef.current.pause()
+      }
+    }
+  }
 
   return (
     <Card
@@ -20,8 +32,12 @@ const Tour = () => {
           component="video"
           className="ourPrograms--image"
           src={videoTour}
-          controls
+          loop
           autoPlay
+          playsInline
+          muted
+          onClick={handleVideoClick}
+          ref={videoRef}
           sx={{ width: '50%' }}
         />
         <div

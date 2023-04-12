@@ -8,6 +8,7 @@ import Staff from './screens/Body/Staff'
 import Contact from './screens/Body/Contact'
 import ProgramsNav from './components/ProgramsNav'
 import TestimonialsScreen from './screens/Body/TestimonialsScreen/TestimonialsScreen'
+import TourPopUp from './components/TourPopUp/TourPopUp'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
@@ -25,6 +26,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
+      <TourPopUp />
       <div className="screens--wraper">
         <ScrollToTop />
         <Routes>
