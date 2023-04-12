@@ -7,6 +7,7 @@ import Programs from './Programs'
 import Testimonials from './Testimonials'
 import Contact from './Contact'
 import { useState } from 'react'
+import Tour from '../../components/Tour/Tour'
 
 const Screens = () => {
   const [value, setValue] = useState(0)
@@ -18,6 +19,7 @@ const Screens = () => {
     <div className="body--container">
       <Home />
       <AboutUs />
+      <Tour />
       <Services />
       <Staff />
       <BackgroundContact value={value} handleChange={handleChange} />

@@ -1,0 +1,15 @@
+.tour-container {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  width: 45% !important;
+}
+
+video {
+  width: 100%;
+  object-fit: contain;
+}

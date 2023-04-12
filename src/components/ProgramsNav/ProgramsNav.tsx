@@ -24,84 +24,97 @@ export default function ProgramsInformation() {
   }
   var open = 'something' //temporary solution for keyword error
   return (
-    <Box className="" sx={{ display: 'flex', justifyContent: 'center' }}>
+    <Box
+      className="programCard-component"
+      sx={{ display: 'flex', justifyContent: 'center' }}>
       <Card className="" variant="outlined" sx={{ border: 'none' }}>
-        {programsDescription.map((programDescription, idx) => (
-          <div ref={asd} key={idx}>
-            <Card
-              className="programsCard--wrapper"
-              sx={{
-                boxShadow: 'none',
-                display: 'flex',
-                margin: 10,
-                height: '450px',
-                width: '95%',
-              }}>
-              <CardMedia
-                component="img"
-                /* height="400px" */ src={`${programDescription.img}`}
-              />
-              <CardContent className="programsCard--content" sx={{ width: '100%' }}>
-                <Typography gutterBottom variant="h3" component="div" fontWeight="bold">
-                  {programDescription.title}
-                </Typography>
-                <Typography
-                  gutterBottom
-                  className="programCard--subDescription"
-                  variant="body1">
-                  {programDescription.description}
-                </Typography>
-                <Typography
-                  className="programCard--subTitle"
-                  gutterBottom
-                  variant="body1">
-                  {programDescription.ageTitle}
-                </Typography>
-                <Typography
-                  gutterBottom
-                  className="programCard--subDescription"
-                  variant="body1">
-                  {programDescription.subDescription}
-                </Typography>
-                <Typography
-                  gutterBottom
-                  className="programCard--subTitle"
-                  variant="body1">
-                  {programDescription.trainingTitle}
-                </Typography>
-                <ul
-                  className="programCard--subDescription"
-                  style={{
-                    margin: 0,
-                    paddingInlineStart: 'inherit',
+        {programsDescription.map((programDescription, idx) => {
+          const isVideo = programDescription.id === 1
 
-                    fontSize: 'medium',
-                  }}>
-                  <li>{programDescription.tennisTime}</li>
-                  <li>{programDescription.physicalTime}</li>
-                </ul>
-                <CardActions className="programCard--actionArea">
-                  <Button
-                    onClick={handleClickOpen}
-                    className="programCard--button"
-                    variant="contained"
-                    size="large"
-                    color="warning">
-                    MORE INFO
-                  </Button>
-                  <Button
-                    onClick={handleClickOpen}
-                    className="programCard--button"
-                    variant="outlined"
-                    size="large"
-                    color="warning">
-                    SCHEDULE A CAMP
-                  </Button>
-                </CardActions>
-              </CardContent>
-            </Card>
-          </div>
-        ))}
+          return (
+            <div ref={asd} key={idx} className="programsCard--wrapper">
+              <Card
+                className="programsCard--wrapper"
+                sx={{
+                  boxShadow: 'none',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  margin: 10,
+                  height: '450px',
+                  width: '95%',
+                }}>
+                <CardMedia
+                  component={isVideo ? 'video' : 'img'}
+                  className="programImage"
+                  /* height="400px" */ src={`${programDescription.img}`}
+                  {...(isVideo && { controls: true })}
+                  {...(isVideo && { autoPlay: true })}
+                />
+                <CardContent
+                  className={isVideo ? 'isVideo-content' : 'programsCard--content'}
+                  sx={{ width: '100%' }}>
+                  <Typography gutterBottom variant="h3" component="div" fontWeight="bold">
+                    {programDescription.title}
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    className="programCard--subDescription"
+                    variant="body1">
+                    {programDescription.description}
+                  </Typography>
+                  <Typography
+                    className="programCard--subTitle"
+                    gutterBottom
+                    variant="body1">
+                    {programDescription.ageTitle}
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    className="programCard--subDescription"
+                    variant="body1">
+                    {programDescription.subDescription}
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    className="programCard--subTitle"
+                    variant="body1">
+                    {programDescription.trainingTitle}
+                  </Typography>
+                  <ul
+                    className="programCard--subDescription"
+                    style={{
+                      margin: 0,
+                      paddingInlineStart: 'inherit',
+
+                      fontSize: 'medium',
+                    }}>
+                    <li>{programDescription.tennisTime}</li>
+                    <li>{programDescription.physicalTime}</li>
+                  </ul>
+                  <CardActions className="programCard--actionArea">
+                    <Button
+                      onClick={handleClickOpen}
+                      className="programCard--button"
+                      variant="contained"
+                      size="large"
+                      color="warning">
+                      MORE INFO
+                    </Button>
+                    <Button
+                      onClick={handleClickOpen}
+                      className="programCard--button"
+                      variant="outlined"
+                      size="large"
+                      color="warning">
+                      SCHEDULE A CAMP
+                    </Button>
+                  </CardActions>
+                </CardContent>
+              </Card>
+            </div>
+          )
+        })}
       </Card>
       {modalOpen && <FormDialog open={open} onClose={handleClose} />}
     </Box>

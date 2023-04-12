@@ -172,6 +172,10 @@ nav {
   font-weight: bold !important;
 }
 
+.programImage {
+  width: 50% !important;
+}
+
 .programCard--subTitle {
   font-weight: bold !important;
   color: #ed6c02;
@@ -398,16 +402,25 @@ nav {
     align-items: center !important;
     margin-bottom: 20px;
   }
+
+  .programImage {
+    width: 100% !important;
+  }
+
   .program--component {
     margin-bottom: 20px;
     height: 340px /* !important */;
     display: flex;
   }
 
+  .programCard-component {
+    padding: 10% 0 25% 0;
+  }
+
   .programsCard--wrapper {
     display: block !important;
     width: 90% !important;
-    margin: 0 18px !important;
+    margin: 0 auto !important;
     height: unset !important;
   }
 
