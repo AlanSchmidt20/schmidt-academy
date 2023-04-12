@@ -57,11 +57,9 @@ const Tour = () => {
             fontFamily="Helvetica Neue LT">
             MIAMI TENNIS TOUR 2023
           </Typography>
-          At the Schmidt Tennis Academy we offer a variety of training programs that will
-          allow you to quickly obtain significant results, and that will give you all the
-          keys to achieve your goals. Joining the Schmidt Tennis Academy for a course
-          means joining a family of enthusiasts led by a team of teachers using the
-          Schmidt methodology has proven its efficiency for 25 years.
+          Experience Miami's sun, sand, sea, and tennis scene with our Miami Tennis Tour.
+          Our program offers top coaching, friendly matches, and exciting social
+          activities to elevate your game and create unforgettable memories.
           <Link
             style={{ textDecoration: 'none' }}
             to={'/programs'}
