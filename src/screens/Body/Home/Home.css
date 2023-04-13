@@ -9,12 +9,12 @@
   top: 30px;
 }
 .css-1m9128y {
-  display: none;
+  margin-top: 35px !important;
 }
-
 /* .css-1f8sh1y {
   height: 860px !important;
 } */
+
 @media screen and (max-width: 480px) {
   .css-1f8sh1y {
     height: 240px !important;
@@ -23,5 +23,9 @@
     height: 100% !important;
     width: 100% !important;
     object-fit: fill;
+  }
+
+  .css-1m9128y {
+    margin-top: 15px !important;
   }
 }
