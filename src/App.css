@@ -121,8 +121,7 @@ nav {
 }
 
 .backgroundImage--component {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('./images/PromoFoto.jpeg');
+  background-image: /* linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), */ url(./images/PromoFoto.jpeg) !important;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -588,5 +587,11 @@ nav {
 @media (min-width: 1021px) and (max-width: 1177px) {
   .testimonial--description {
     font-size: 12.7px !important;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .backgroundImage--component {
+    background: url(./images/PromoFoto.jpeg) !important;
   }
 }
