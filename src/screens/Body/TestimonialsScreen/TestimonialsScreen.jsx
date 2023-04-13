@@ -4,7 +4,7 @@ import { testimonialsDescription } from '../../../content/testimonialsScreen'
 const TestminonialsCard = testimonialsDescription.map(testimonialItem => {
   const { id /* , name, country, subTitle, description, image  */ } = testimonialItem
 
-  const isLargeText = id === 3
+  const isLargeText = id === 3 || id === 4
 
   return (
     <div key={testimonialItem.id} className="testimonialsScreen--container">

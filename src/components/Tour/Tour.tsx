@@ -38,6 +38,7 @@ const Tour = () => {
           src={videoTour}
           loop
           autoPlay
+          muted
           playsInline
           onClick={handleVideoClick}
           ref={videoRef}
