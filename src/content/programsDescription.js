@@ -6,10 +6,14 @@ export const programsDescription = [
     description:
       'The tennis and physical training sessions will be adapted to the level of the young players',
     ageTitle: 'FOR AGES 10 AND OVER',
-    subDescription: `'6 days of intensive training for players who want to experience something new.'`,
-    trainingTitle: 'DEDICATED TRAINING TIME',
-    tennisTime: 'Tennis: 3hss/day',
-    physicalTime: 'Physical fitness: 2hs/day',
+    subDescription:
+      '7 days of intensive training for players who want to experience something new.',
+    trainingTitle: 'ACTIVITIES:',
+    tennisTime: 'Daily tennis training',
+    tournament: 'STA Open tournament',
+    amateourTennis: 'Live international amateur tennis',
+    shareExperiences:
+      'Share new experiences in a week that combines sports and friendship.',
   },
   {
     id: 2,

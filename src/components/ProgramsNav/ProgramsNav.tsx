@@ -42,6 +42,7 @@ export default function ProgramsInformation() {
         {programsDescription.map((programDescription, idx) => {
           const isVideo = programDescription.id === 1
           const isIntensive = programDescription.id === 2 || programDescription.id === 4
+          const isTournament = programDescription.id === 1
           return (
             <div ref={asd} key={idx} className="programsCard--wrapper">
               <Card
@@ -112,7 +113,10 @@ export default function ProgramsInformation() {
                         </ul>
                       )}
                     </li>
-                    <li>{programDescription.physicalTime}</li>
+                    {isTournament && <li>{programDescription.amateourTennis}</li>}
+                    {isTournament && <li>{programDescription.tournament}</li>}
+                    {isTournament && <li>{programDescription.shareExperiences}</li>}
+                    {!isTournament && <li>{programDescription.physicalTime}</li>}
                   </ul>
                   <CardActions className="programCard--actionArea">
                     <Button
