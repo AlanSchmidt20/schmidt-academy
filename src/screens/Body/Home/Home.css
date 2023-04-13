@@ -8,10 +8,13 @@
 .css-1l7c0cy {
   top: 30px;
 }
-
-.css-1f8sh1y {
-  height: 860px !important;
+.css-1m9128y {
+  display: none;
 }
+
+/* .css-1f8sh1y {
+  height: 860px !important;
+} */
 @media screen and (max-width: 480px) {
   .css-1f8sh1y {
     height: 240px !important;

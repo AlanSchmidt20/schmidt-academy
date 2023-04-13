@@ -521,6 +521,7 @@ nav {
   .contact--container {
     width: 100%;
     display: block;
+    height: 120vh;
   }
   .contact--component {
     display: block !important;
@@ -556,12 +557,17 @@ nav {
   }
 
   .css-18wpqyn-MuiSvgIcon-root {
-    position: relative;
-    top: 5px;
+    position: relative !important;
+    top: 5px !important;
   }
 
   .css-crw0rw {
     display: block !important;
+  }
+
+  .css-149431h {
+    position: relative;
+    top: 5px;
   }
 
   .css-a3i9r6 {

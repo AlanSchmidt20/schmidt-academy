@@ -22,7 +22,7 @@ export const images = [
 
 function Home(props: any) {
   return (
-    <Carousel className="carousel--component">
+    <Carousel autoPlay interval={2000} className="carousel--component">
       {images.map((image, idx) => (
         <Image className="carousel--image" src={image.imgPath} key={idx} />
       ))}
