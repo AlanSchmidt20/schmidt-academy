@@ -4,7 +4,7 @@ export const teamCeo = [
     name: 'Maria Ines Lasala',
     title: 'Founder / CEO',
     description:
-      'Maria Ines is an elite accountant who dedicated her life to numbers and her family, who came up with the great idea of forming an internastional academy, as always a visionary.' /* icon: <LinkedInIcon />, */,
+      'María Inés es la mentora de este proyecto familiar. Contadora de profesión que dedicó su vida a los números y a su familia.  Líder de la gran idea de formar esta academia de tennis con alcance internacional.' /* icon: <LinkedInIcon />, */,
   },
   {
     img: require('../images/IMG_6169_Original.jpg'),
