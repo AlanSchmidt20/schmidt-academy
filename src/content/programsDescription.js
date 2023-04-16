@@ -5,9 +5,8 @@ export const programsDescription = [
     title: 'Miami Tour 2023',
     description:
       'The tennis and physical training sessions will be adapted to the level of the young players',
-    ageTitle: 'FOR AGES 10 AND OVER',
-    subDescription:
-      '7 days of intensive training for players who want to experience something new.',
+    ageTitle: 'FOR AGES 18+ OR ACCOMPANIED BY AN ADULT',
+    subDescription: `Experience Miami's sun, sand, sea, and tennis environment with our 7-day tennis tour! Join us for intensive training, top coaching, friendly matches, and exciting social activities to elevate your game and create unforgettable memories.`,
     trainingTitle: 'ACTIVITIES:',
     tennisTime: 'Daily tennis training',
     tournament: 'STA Open tournament',

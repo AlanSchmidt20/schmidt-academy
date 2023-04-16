@@ -53,7 +53,7 @@ export default function ProgramsInformation() {
                   justifyContent: 'center',
                   alignItems: 'center',
                   margin: 10,
-                  height: '450px',
+                  height: '100%',
                   width: '95%',
                 }}>
                 <CardMedia
