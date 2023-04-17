@@ -65,6 +65,7 @@ export default function ContactUs() {
             email: '',
             message: '',
           })
+          setModalOpen(true)
         },
         error => {
           console.log(error.text)
@@ -73,10 +74,6 @@ export default function ContactUs() {
   }
 
   const [modalOpen, setModalOpen] = useState(false)
-
-  const handleClickOpen = () => {
-    setModalOpen(true)
-  }
 
   const handleClose = () => {
     setModalOpen(false)
@@ -119,6 +116,7 @@ export default function ContactUs() {
             id="firstname"
             label="First Name"
             variant="outlined"
+            required
           />
           <TextField
             className="textField--input"
@@ -129,6 +127,7 @@ export default function ContactUs() {
             value={formData.lastName}
             label="Last Name"
             variant="outlined"
+            required
           />
           <TextField
             className="textField--input"
@@ -139,16 +138,18 @@ export default function ContactUs() {
             id="phoneNumber"
             label="Phone Number"
             variant="outlined"
+            required
           />
           <TextField
             className="textField--input"
-            type="text"
+            type="email"
             onChange={handleChange}
             name="email"
             value={formData.email}
             id="email"
             label="Email"
             variant="outlined"
+            required
           />
           <TextField
             className="textField--input message-input"
@@ -167,13 +168,6 @@ export default function ContactUs() {
             type="submit"
             variant="outlined"
             size="large"
-            onClick={handleClickOpen}
-            disabled={
-              formData.firstName.length < 1 ||
-              formData.lastName.length < 1 ||
-              formData.phoneNumber.length < 1 ||
-              formData.email.length < 1
-            }
             sx={{ m: 1, display: 'block', mb: 2 }}>
             Submit
           </Button>

@@ -18,7 +18,7 @@ export default function AlertDialog(props: { onClose: any; open: any }) {
         onClose={handleClose}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description">
-        <DialogTitle id="alert-dialog-title">{'Thanks for contacting us'}</DialogTitle>
+        <DialogTitle id="alert-dialog-title">{'Thanks for contacting us!'}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             Your message has been received, we will contact you soon.
