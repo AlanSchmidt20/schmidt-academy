@@ -84,7 +84,7 @@ nav {
 }
 
 .service-page-container {
-  height: 91vh !important;
+  height: 89vh !important;
   padding: 0;
 }
 .service--container {
@@ -291,7 +291,7 @@ nav {
 }
 
 .contact-page-container {
-  height: 89vh;
+  height: 86.5vh;
   padding: 0;
 }
 
@@ -388,6 +388,7 @@ nav {
 
   .service-page-container {
     height: unset;
+    padding-bottom: 3%;
   }
 
   .service--card {
