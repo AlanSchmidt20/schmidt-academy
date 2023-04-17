@@ -65,7 +65,7 @@ const memberCard = team.map((member, idx) => (
 
 export default function StaffCard() {
   return (
-    <Box className="memberCard--container">
+    <Box className="memberCard--container" sx={{ paddingBottom: '5%' }}>
       <h1
         style={{
           textAlign: 'center',

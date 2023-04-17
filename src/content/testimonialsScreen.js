@@ -69,7 +69,7 @@ export const testimonialsDescription = [
     description: `Hi, my name is Maxi Zanazzi, friend and colleague of both Brian and Seba. I can only use praise when referring to them because, in Seba's case, he was one of my trainers both for competition and for the professional environment, teaching me my first steps and providing me with tools to develop myself in the teaching of our beloved sport. A passion that we were able to share over 15 years on the court. As for Brai, a great friend with whom we shared many hours of hard training, competitions, and work. We carried out classes with different groups of students, both with schoolchildren and advanced level groups, organizing representative teams and social events at the institutional level. In this new and great beginning of the Schmidt Academy, I only wish them a lot of success, knowing that they will always count on me and above all, that they can transmit the great values of the sport as they have done over so many years! Good luck, my friends.`,
   },
   {
-    id: 8,
+    id: 9,
     image: require('../images/testimonialsCardImageRodrigo.jpeg'),
     name: 'Rodrigo Gonzalez',
     country: 'Argentina',
@@ -78,7 +78,7 @@ export const testimonialsDescription = [
     Schmidt family, I wish you many successes, and may the love and passion for this great sport extend as far as you can dream it.`,
   },
   {
-    id: 9,
+    id: 10,
     image: require('../images/testimonialsCardImageMarcos.jpeg'),
     name: 'Marcos De Luca',
     country: 'Argentina',

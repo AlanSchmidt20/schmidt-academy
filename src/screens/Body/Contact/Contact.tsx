@@ -8,6 +8,7 @@ import { styled } from '@mui/material/styles'
 import { contactUs } from '../../../content/contactUs'
 import emailjs from '@emailjs/browser'
 import AlertDialog from './Modal/Modal'
+import { useLocation } from 'react-router-dom'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -28,6 +29,8 @@ const contactInformation = contactUs.map((contact, idx) => (
 ))
 
 export default function ContactUs() {
+  const location = useLocation()
+
   const [formData, setFormData] = React.useState({
     firstName: '',
     lastName: '',
@@ -81,7 +84,12 @@ export default function ContactUs() {
   var open = 'something' //temporary solution for keyword error
 
   return (
-    <div className="contact--container">
+    <div
+      className={
+        location.pathname === '/contact'
+          ? 'contact-page-container contact--container'
+          : 'contact--container'
+      }>
       <h1
         style={{
           textAlign: 'center',

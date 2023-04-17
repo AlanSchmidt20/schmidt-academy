@@ -9,7 +9,8 @@
 
 .screens--wraper {
   padding-top: 50px;
-  height: 100vh;
+  /*   height: 100vh;
+ */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -80,6 +81,11 @@ nav {
   flex-direction: column;
   /*   font-family: 'Helvetica Neue LT';
  */
+}
+
+.service-page-container {
+  height: 91vh !important;
+  padding: 0;
 }
 .service--container {
   margin-top: 20px;
@@ -284,6 +290,11 @@ nav {
   height: 100%;
 }
 
+.contact-page-container {
+  height: 89vh;
+  padding: 0;
+}
+
 .contact--form {
   width: 40%;
 }
@@ -373,6 +384,10 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .service-page-container {
+    height: unset;
   }
 
   .service--card {
@@ -521,8 +536,13 @@ nav {
   .contact--container {
     width: 100%;
     display: block;
-    height: 120vh;
+    height: 140vh;
   }
+
+  .contact-page-container {
+    height: 140vh;
+  }
+
   .contact--component {
     display: block !important;
   }

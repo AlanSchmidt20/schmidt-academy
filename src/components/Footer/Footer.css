@@ -1,0 +1,23 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  color: white;
+  background-color: black;
+  width: 100%;
+}
+
+.footer-container p {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container a {
+  color: white;
+  text-underline-offset: 3px;
+}
+
+.footer-container a:hover {
+  color: #ffd700;
+}

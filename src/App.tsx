@@ -11,6 +11,7 @@ import TestimonialsScreen from './screens/Body/TestimonialsScreen/TestimonialsSc
 import TourPopUp from './components/TourPopUp/TourPopUp'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -24,22 +25,25 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <TourPopUp />
-      <div className="screens--wraper">
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<AboutUs />} />
-          <Route path="services" element={<Services />} />
-          <Route path="team" element={<Staff />} />
-          <Route path="programs" element={<ProgramsNav />} />
-          <Route path="testimonials" element={<TestimonialsScreen />} />
-          <Route path="contact" element={<Contact />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Header />
+        <TourPopUp />
+        <div className="screens--wraper">
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<AboutUs />} />
+            <Route path="services" element={<Services />} />
+            <Route path="team" element={<Staff />} />
+            <Route path="programs" element={<ProgramsNav />} />
+            <Route path="testimonials" element={<TestimonialsScreen />} />
+            <Route path="contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+      <Footer />
+    </>
   )
 }
 

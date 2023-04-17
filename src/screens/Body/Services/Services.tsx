@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
 import { services } from '../../../content/services'
+import { useLocation } from 'react-router-dom'
 
 const serviceCard = services.map((service, idx) => (
   <Card
@@ -28,9 +29,15 @@ const serviceCard = services.map((service, idx) => (
 ))
 
 export default function OutlinedCard() {
+  const location = useLocation()
+
   return (
     <Box
-      className="serviceCard--container"
+      className={
+        location.pathname === '/services'
+          ? 'serviceCard--container service-page-container'
+          : 'serviceCard--container'
+      }
       sx={{ minWidth: 275, width: 'auto', height: 400 }}>
       <h1
         style={{
