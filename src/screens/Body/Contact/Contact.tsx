@@ -131,7 +131,7 @@ export default function ContactUs() {
           />
           <TextField
             className="textField--input"
-            type="text"
+            type="tel"
             onChange={handleChange}
             name="phoneNumber"
             value={formData.phoneNumber}
