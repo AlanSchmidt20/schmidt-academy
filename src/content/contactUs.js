@@ -20,7 +20,7 @@ export const contactUs = [
     icon: <PhoneInTalkIcon fontSize="medium" sx={{ ml: 1, mr: 1, color: '#007bff' }} />,
     description: `ARGENTINA + 54 9 115-428-7456 / 
     \r
-    \nUSA + 1 786-834-7226 / COLOMBIA +57 316-482-0034`,
+    \nUSA + 1 786-992-2971 / COLOMBIA +57 316-482-0034`,
   },
   {
     title: 'Email: ',
